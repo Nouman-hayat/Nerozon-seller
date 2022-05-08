@@ -73,7 +73,15 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-
+.popup-form-label{
+    font-size: 14px;
+}
+.popup-form-input{
+    font-weight: 500;
+    font-size: 15px;
+    
+    
+}
 
 /* header start */
 
@@ -88,7 +96,7 @@
     align-items: center;
 }
 
-.header-wrapper .nav-btn {
+.header-wrapper #nav-btn {
     padding: 10px 15px;
     background-color: transparent;
     color: white;
@@ -109,7 +117,7 @@
 }
 
 @media (max-width: 575.98px) {
-    .header-wrapper .nav-btn {
+    .header-wrapper #nav-btn {
         font-size: 10px;
         padding: 5px 10px;
     }
@@ -120,8 +128,122 @@
 
 
 /* header end */
+/* overlay-form */
+#body-content{
+    position: relative;
+}
+#overlay-form , #pass-form{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #544D5E;
+    opacity: 0.8;
+    z-index: 99;
+    
+}
+#overlay-form-inner , #pass-form-inner{
+   
+    position: fixed;
+    width: 40vw;
+    height: 450px;
+     opacity: unset;
+    background-color: white;
+    z-index: 999;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    padding: 40px 30px;
+}
+#overlay-form-inner , #overlay-form{
+display: none;
+}
+#close-icon-wrapper{
+    position: absolute;
+    top: 4%;
+    right: 4%;
+}#close-icon-wrapper .bi-x-lg{
+    font-weight: 900;
+    font-size: 25px;
+    cursor: pointer;
+}
+#login-content , #reset-password-content {
+    display: none;
+}
+
+#login-content  .form-text{
+    color: var(--brand-orange);
+    cursor: pointer;
+}
+#login-content .primary-btn-style ,#reset-password-content .primary-btn-style{
+    margin-top: 40px;
+    padding: 10px 90px;
+}#login-content small a ,#reset-password-content small a{
+     color: var(--brand-orange);
+}
+
+#reset-password-content .text-generic{
+margin: 0 30px;
+font-size: 14px;
+}
+#change-password-content #btn-cancel {
+    background-color:white;
+    color: rgb(172, 172, 172);
+    border: 1px solid rgb(172, 172, 172);
+    
+}
+.btn-pair{
+    margin: 30px;
+}
+@media (max-width: 1199.98px) {
+  #overlay-form-inner , #pass-form-inner{
+      width: 60vw;
+  }
+}
 
 
+
+@media (max-width: 767.98px) {
+   #overlay-form-inner , #pass-form-inner{
+      width: 70vw;
+  }
+  #reset-password-content .text-generic{
+margin: 0 20px;
+font-size: 12px;
+}
+}
+@media (max-width: 575.98px) {
+   #overlay-form-inner , #pass-form-inner{
+      width: 95vw;
+  }
+  #overlay-form-inner , #pass-form-inner{
+      top: 12%;
+  }
+  .btn-pair{
+    margin: 10px;
+}#overlay-form-inner , #pass-form-inner{
+    padding: 25px 15px ;
+}
+#overlay-form-wrapper .large-heading{
+font-size: 18px;
+}
+#change-password-content #btn-cancel , #change-password-content .primary-btn-style{
+    padding: 8px 20px;
+}
+ #reset-password-content .text-generic{
+margin: 0 ;
+font-size: 12px;
+}
+#login-content  .popup-form-input{
+font-size: 12px;
+}
+}
+
+/* overlay-form */
 /* hero */
 
 .hero-wrapper {
@@ -688,16 +810,9 @@ width: 100%;
 .footer-wrapper .footer-image{
     display: none;
 } 
-.footer-wrapper{
-    
-    
-     width: 100%;
-    height: 850px;
-    position: relative;
-    overflow: hidden;
-}
+
 .footer-wrapper  .footer-link-wrapper .large-heading{
-    font-size: 25px;
+    font-size: 20px;
     color: var(--white);
 }
 .footer-wrapper  .footer-link-wrapper ,.footer-link{
@@ -711,6 +826,13 @@ width: 100%;
     
 
 }
+}
+@media (max-width: 767.98px) {
+  .footer-wrapper{
+ 
+    height: 850px;
+    
+} 
 }
 /* footer */
 

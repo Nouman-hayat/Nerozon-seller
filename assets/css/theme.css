@@ -230,6 +230,7 @@ font-size: 12px;
 }
 #overlay-form-wrapper .large-heading{
 font-size: 18px;
+  margin-bottom: 30px;
 }
 #change-password-content #btn-cancel , #change-password-content .primary-btn-style{
     padding: 8px 20px;

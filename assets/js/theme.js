@@ -111,8 +111,7 @@ nextBtnThird.addEventListener("click", function (event) {
   gstguide.style.display = "none";
   bankguide.style.display = "block";
    
-  registerwrapper.style.marginBottom = "300px";
-  
+ 
 });
 submitBtn.addEventListener("click", function () {
   bullet[current - 1].classList.add("active");

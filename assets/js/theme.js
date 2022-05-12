@@ -97,7 +97,8 @@ nextBtnFirst.addEventListener("click", function(event) {
         numbermultiform.value != "" &&
         fullnamemultiform.value != "" &&
         passwordmultiform.value != ""
-    ) {
+    )
+    {
         event.preventDefault();
         slidePage.style.marginLeft = "-25%";
         bullet[current - 1].classList.add("active");
@@ -106,7 +107,8 @@ nextBtnFirst.addEventListener("click", function(event) {
         current += 1;
         signupguide.style.display = "none";
         locationguide.style.display = "block";
-    } else {
+    }
+    else {
         alert("enter field data");
 
     }
@@ -250,3 +252,5 @@ bankradio2.addEventListener("click", function() {
 
 });
 // form setting
+
+

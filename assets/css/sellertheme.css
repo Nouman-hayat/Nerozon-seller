@@ -1,0 +1,7 @@
+#seller-page .container{
+
+max-width: 1300px;
+}
+.user-header-wrapper {
+    background-color: var(--text-blue);
+}

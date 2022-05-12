@@ -663,7 +663,7 @@
         font-size: 20px;
     }
     .section-app-wrapper .section-app-left .text-generic {
-        width: 300px;
+        width: 270px;
     }
     .section-app-wrapper .row .qr-image {
         width: 200px;
@@ -917,6 +917,10 @@
 .form-outer form .page {
     width: 25%;
     transition: margin-left 0.3s ease-in-out;
+    -webkit-transition: margin-left 0.3s ease-in-out;
+    -moz-transition: margin-left 0.3s ease-in-out;
+    -ms-transition: margin-left 0.3s ease-in-out;
+    -o-transition: margin-left 0.3s ease-in-out;
 }
 
 .form-outer form .page .title {
@@ -1355,9 +1359,7 @@ form .page .btns button.next {
     .mutiform-wrapper .page {
         padding: 20px 10px;
     }
-    .container {
-        padding: 3px;
-    }
+    
     .progressbar .step .bullet:before,
     .progressbar .step .bullet:after {
         right: -78px;

@@ -122,3 +122,145 @@ margin:0 20px;
 color: white;
 }
 /* user-sidebar-menu-wrapper */
+/* stats section */
+.user-stats-wrapper{
+    background-color: #E5E5E5;
+    padding: 30px 0;
+}
+.user-stats-content-inner{
+   padding: 20px;
+   display: flex;
+   align-items: center;
+   background-color: white;
+   border-radius:10px ;
+   -webkit-border-radius:10px ;
+   -moz-border-radius:10px ;
+   -ms-border-radius:10px ;
+   -o-border-radius:10px ;
+   justify-content: space-between;
+   position: relative;
+}.user-stat-img {
+    width: 50px;
+}
+.user-stat-img img{
+width: 100%;
+}
+.user-stats-content-inner .user-stats-text{
+    margin-right: 20px;
+}.user-stats-content-inner .user-stats-text span{
+    font-size: 14px;
+}.user-stats-content-inner .new-orders-stat::after ,.user-stats-content-inner .urgent-stat::after,.user-stats-content-inner .breaches-stat::after , .user-stats-content-inner .Reattempts-stat::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%,0);
+    height: 3px;
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+} .user-stats-inner-wrapper .new-orders-stat h1{
+    color: var(--brand-green);
+}
+.user-stats-content-inner .new-orders-stat::after{
+    background-color: var(--brand-green);
+}
+ .user-stats-inner-wrapper .urgent-stat h1 {
+    color: #E7478A;
+}
+.user-stats-content-inner .urgent-stat::after{
+    background-color: #E7478A;
+}
+ .user-stats-inner-wrapper .breaches-stat h1 {
+    color: #2B9DC1;
+}
+.user-stats-content-inner .breaches-stat::after{
+   background: #2B9DC1;
+
+}
+ .user-stats-inner-wrapper .Reattempts-stat h1 {
+    color: #EC7C03;
+}
+.user-stats-content-inner .Reattempts-stat::after{
+    background: #EC7C03;
+
+}
+.userful-link-wrapper , .returns-spf-wrapper, .statistic-wrapper ,.user-payments-wrapper {
+       padding: 20px;
+ 
+   background-color: white;
+   border-radius:10px ;
+   -webkit-border-radius:10px ;
+   -moz-border-radius:10px ;
+   -ms-border-radius:10px ;
+   -o-border-radius:10px ;
+}
+.userful-link-wrapper h5 ,.returns-spf-wrapper h5 , .statistic-wrapper h5 , .user-payments-wrapper h5{
+    font-size: 15px;
+    margin-bottom: 30px;
+    position: relative;
+}.userful-link-wrapper h5::after , .returns-spf-wrapper h5::after ,.statistic-wrapper h5::after ,.statistic-wrapper .statistic-inner-wrapper::after, .user-payments-wrapper h5::after , .user-payments-inner .payment-divider::after{
+    content: '';
+     background-color: #E5E5E5;
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,0);
+    height: 1px;
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+}
+.userful-link-wrapper i{
+    color: var(--brand-green);
+    font-size: 15px;
+}.returns-spf-detail-wrapper .col-6 p ,.user-payments-inner .row .col-md-6 .row .col-6 p{
+margin: 0 0 0 auto;
+font-size: 14px;
+
+}.returns-spf-detail-wrapper .col-6 span, .userful-link-wrapper span ,.user-payments-inner .row .col-md-6 .row .col-6 p{
+    font-size: 14px;
+}.returns-spf-wrapper , .statistic-wrapper ,.user-payments-wrapper{
+    margin-top: 30px;
+}
+.returns-spf-detail-wrapper .row{
+display: flex;
+justify-content: space-between;
+}.statistic-wrapper .statistic-image{
+    margin-right: 20px;
+}
+.statistic-wrapper .statistic-inner-wrapper h4{
+     font-size: 12px;
+     margin-top: 30px;
+}.statistic-wrapper .statistic-content-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}.statistic-wrapper .statistic-text p{
+    font-size: 12px;
+    margin: 0;
+}.statistic-wrapper .statistic-inner-wrapper{
+    position: relative;
+}.user-payments-inner .payment-divider::after{
+bottom: unset;
+top: 0;
+    left: unset;
+    right: 0;
+    width: 2px;
+     height: 30px;
+}.user-payments-wrapper .payment-date{
+    font-size: 13px!important;
+}
+@media (max-width: 766.98px) {
+    .user-stats-content-inner{
+        margin-bottom: 20px;
+    }
+}
+/* stats section */
+/* background: #E7478A; */

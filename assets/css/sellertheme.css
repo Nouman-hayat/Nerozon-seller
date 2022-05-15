@@ -649,6 +649,99 @@ width: 90px;margin: 0 auto;
 }
 }
 /* add new list */
-/* background: #E7478A; */
 
-/* ,#select-new-product-category-main-wrapper #select-new-product-category-sub-wrapper #category-sub-inner-wrapper */
+
+/* my listing page */
+#mylisting-types-search-wrapper{
+background-color:#F2F2F2;
+    padding: 30px 0;
+}
+.mylisting-types-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+    
+}.mylisting-types-wrapper .mylisting-types-left h5 ,.mylisting-search-wrapper h5{
+font-size: 17px;
+}.mylisting-types-wrapper .mylisting-types-left p{
+    font-size: 15px;
+}.mylisting-types-wrapper .mylisting-types-left p a{
+color: var(--brand-green);
+text-decoration: none;
+}.mylisting-type-right .new-listing{
+    background-color: var(--brand-green);
+    color: white;
+}.mylisting-type-right .bulk-listing{
+    background-color: transparent;
+    border: 1px solid var(--brand-green);
+    margin-top: 20px;
+}.mylisting-type-right{
+   
+    margin-left: 40px;
+
+}.mylisting-search-wrapper{
+    background-color: white;
+    padding: 25px;
+}.mylisting-search-wrapper .search-box .btn{
+    background-color: #EC7C03;
+    color: white;
+}
+@media (max-width: 992.98px){
+.mylisting-search-wrapper{
+    margin-top: 20px;
+}
+}
+@media (max-width: 575.98px){
+    .mylisting-types-wrapper{
+        flex-direction: column;
+    }.mylisting-type-right{
+   
+    margin-left: 0px;
+
+}
+.mylisting-type-right .new-listing,.mylisting-type-right .bulk-listing{
+    font-size: 12px;
+    margin-top: 0;
+}
+}
+
+.mylisting-method-wrap{
+background-color:#F2F2F2;
+padding: 20px 0;
+}.mylisting-method-wrap .btn{
+background-color: transparent;
+}.mylisting-method-wrap .btn.active{
+    border-bottom: 2px solid #EC7C03 ;
+}
+
+#mylisting-top-action{
+    background-color:#F2F2F2;
+}#mylisting-top-action .mylisting-top-action-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 1080.98px){
+#mylisting-top-action .mylisting-top-action-inner{
+    flex-direction: column;
+    align-items: flex-start;
+}
+#mylisting-top-action .mylisting-top-action-left .btn{
+    margin: 10px 0;
+   
+
+}}
+@media (max-width: 1080.98px){
+#mylisting-top-action .mylisting-top-action-left .btn{
+    margin: 10px 0;
+    font-size: 10px;
+    padding: 6px 10px;
+   
+
+}
+}
+
+/* my listing page */

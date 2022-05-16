@@ -801,3 +801,50 @@ margin-left: 30px;
 }
 
 /* SELECT BRAND PAGE */
+/* select product info */
+
+
+#newlisting-selectproductinfo-image-wrapper{
+    display: grid;
+    place-items: center;
+    height: 390px;
+    margin-bottom: 8px;
+    background-color: white;
+}.newlisting-selectproductinfo-detail-inner .newlisting-selectproductinfo-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}.newlisting-selectproductinfo-detail-inner .newlisting-selectproductinfo-header h5{
+    font-size: 17px;
+}.newlisting-selectproductinfo-detail-inner{
+    padding: 20px;
+     background-color: white;
+}
+.newlisting-selectproductinfo-detail-inner .newlisting-selectproductinfo-header a{
+    font-size: 14px;
+}.newlisting-selectproductinfo-detail-inner .row .col-6{
+    font-size: 15px;
+    margin-top: 5px;
+    color: rgb(189, 189, 189);
+}
+@media (max-width: 490.98px){
+.newlisting-selectproductinfo-detail-inner .newlisting-selectproductinfo-header h5{
+    font-size: 10px;
+}
+.newlisting-selectproductinfo-detail-inner{
+    padding: 20px 8px;
+     background-color: white;
+}.newlisting-selectproductinfo-detail-inner .newlisting-selectproductinfo-header a{
+    font-size: 12px;
+}
+.newlisting-selectproductinfo-detail-inner .newlisting-selectproductinfo-header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.newlisting-selectproductinfo-detail-inner .row .col-6{
+    font-size: 10px;
+    
+}
+}
+/* select product info */

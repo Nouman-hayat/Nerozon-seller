@@ -323,39 +323,41 @@
 <div id="mylisting-top-action">
    <div class="container">
        <div class="mylisting-top-action-inner">
-           <div class="mylisting-top-action-left">
-               <div class="mylisting-top-action-left-inner">
-                    <a href="" class="btn text-black bg-white  px-5"> Upload</a>
-                     <a href="" class="btn text-black bg-white  px-5"> Edit product</a>
-                   <div class="dropdown d-inline">
-  <button class="btn  dropdown-toggle px-3 bg-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
- Filter by status
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li><a class="dropdown-item" href="#">approved</a></li>
-   
-  </ul>
+           <div class="row">
+               <div class="col-md-2">
+  <a href="" class="btn text-black bg-white  px-5"> Upload</a>
  
- 
-</div>
-
-   <div class="dropdown d-inline">
-  <button class="btn  dropdown-toggle px-3 bg-white" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
- Filter by Category
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-    <li><a class="dropdown-item" href="#">shirt</a></li>
-   
-  </ul>
- 
- 
-</div>
- 
+  
                </div>
-               
-           </div>
-            <div class="mylisting-top-action-right">
-             <div class="search-box">
+               <div class="col-md-2">
+
+  <a href="" class="btn text-black bg-white  px-5 "> Edit </a>
+  
+               </div>
+               <div class="col-lg-2">
+                     <div class="form-floating  ">
+  <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+    <option selected>Filter by status</option>
+    <option value="active">Active</option>
+   
+   
+  </select>
+ 
+</div>
+               </div>
+               <div class="col-lg-2">
+                    <div class="form-floating ">
+  <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+    <option selected>Filter by category </option>
+    <option value="shirts">shirts</option>
+  
+   
+  </select>
+ 
+</div>
+               </div>
+               <div class=" col-md-4 ">
+                    <div class="search-box">
                         <div class="input-group">
                          <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Search product">
         <div class="button-icon-bottom-left ">
@@ -363,8 +365,9 @@
                     </div>
                 </div>
                     </div>
-               
+               </div>
            </div>
+         
        </div>
    </div>
 </div>

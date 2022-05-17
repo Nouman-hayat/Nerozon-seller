@@ -859,6 +859,17 @@ margin-left: 30px;
     font-size: 15px;
     margin-top: 5px;
     color: rgb(189, 189, 189);
+}.newlist-selectproduct-info-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}.newlist-selectproduct-info-btn .btn{
+background-color: white;
+margin: 5px;
+width: 150px;
+}.newlist-selectproduct-info-btn .bgc-brand-orange{
+    color: white;
+    background-color: #EC7C03;
 }
 @media (max-width: 490.98px){
 .newlisting-selectproductinfo-detail-inner .newlisting-selectproductinfo-header h5{
@@ -878,6 +889,9 @@ margin-left: 30px;
 .newlisting-selectproductinfo-detail-inner .row .col-6{
     font-size: 10px;
     
+}
+.newlist-selectproduct-info-btn .btn{
+font-size: 13px;
 }
 }
 /* select product info */

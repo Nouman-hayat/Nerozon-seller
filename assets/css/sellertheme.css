@@ -303,6 +303,7 @@ font-weight: 500;
 }#user-bottom-header .user-bottom-left h5{
     color: #EC7C03;
     font-weight: 600;
+    margin-bottom: 10px;
 }.user-listing-form .button-icon-bottom-left .btn{
     background-color: #EC7C03;
     color: white;
@@ -1074,3 +1075,28 @@ background-color: rgb(232, 232, 232);
 }
 }
 /* select product selling information */
+
+
+
+/* brand-approval */
+#brand-approval-wrapper{
+    padding: 50px 0;
+     background-color: #E5E5E5;
+}.brand-approval-inner-wrapper{
+    background-color: white;
+    padding: 20px;
+}.brand-approval-inner-wrapper .col-form-label{
+    font-size: 14px;
+    color: #00244899;
+} .brand-approval-inner-wrapper .form-control, .brand-approval-inner-wrapper  .form-select{
+  background: rgba(237, 243, 226, 0.2);
+}.brand-approval-inner-wrapper span{
+    font-size: 14px;
+    color: #EC7C03;
+    font-weight: 600;
+}.brand-approval-inner-wrapper p{
+    font-size: 12px;
+    color: rgba(0, 36, 72, 0.6);
+    margin-bottom: 0;
+}
+/* brand-approval */

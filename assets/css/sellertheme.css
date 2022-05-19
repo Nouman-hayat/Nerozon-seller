@@ -537,8 +537,6 @@ text-decoration: none;
 }#new-product-list-wrapper{
     background-color:#F2F2F2;
     padding: 30px 0;
-    position: relative;
-    z-index: -1;
 }#new-product-list-wrapper .select-new-product-category input{
     width: 20% !important;
 }
@@ -681,7 +679,6 @@ width: 90px;margin: 0 auto;
 }
 }
 /* add new list */
-
 
 /* my listing page */
 .mylisting-method-wrap{

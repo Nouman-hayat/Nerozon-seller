@@ -1098,5 +1098,94 @@ background-color: rgb(232, 232, 232);
     font-size: 12px;
     color: rgba(0, 36, 72, 0.6);
     margin-bottom: 0;
+}@media (max-width: 350.98px){
+     .brand-approval-inner-wrapper  .form-select ,.brand-approval-inner-wrapper .form-control{
+  font-size: 14px;
+}
 }
 /* brand-approval */
+
+/* .bulk-selectproductinfo-wrapper */
+
+
+.bulkproduct-info .row .bulkproduct-inner{
+    background-color: white;
+    padding: 30px 10px 10px 10px;
+   border: 1px solid #c6c6c6;
+   position: relative;
+   height: 100%;
+}.bulkproduct-info .row .col-md-3{
+    padding: 5px;
+}
+.bulkproduct-info .row .bulkproduct-inner.active{
+    border-color: #EC7C03;
+}
+
+.bulkproduct-inner{
+    padding: 20px 10px;
+    background-color: white;
+
+}.bulkproduct-inner h5{
+    font-size: 14px;
+    text-align: center;
+}.bulkproduct-inner p{
+    font-size: 12px;
+    text-align: center;
+}
+.add-bulk-product-data h4{
+    font-size: 18px;
+    font-weight: 600;
+
+}.add-bulk-product-data p{
+    font-size: 13px;
+    margin: 3px 0;
+    
+}.add-bulk-product-data .btn{
+    color: var(--brand-green);
+    border: 1px solid var(--brand-green);
+}.add-bulk-product-data .bgc-brand-orange{
+     border: 1px solid #EC7C03 ;
+}.bulkproductinfo-bottom-wrapper .guideline-heading i{
+margin: 0 30px;
+}
+.bulkproductinfo-bottom-wrapper .guideline-heading p{
+    font-size: 13px;
+}.bulkproductinfo-bottom-wrapper .guideline-heading{
+    background-color: #F6FFE7;
+    padding: 20px 10;
+    margin-top: 30px;
+}.bulkproductinfo-bottom-wrapper  .bottomproductinfo-content{
+    background-color: white;
+    padding: 20px;
+}.bulkproductinfo-bottom-wrapper  .bottomproductinfo-content h4{
+    font-size: 17px;
+}.bulkproductinfo-bottom-wrapper  .bottomproductinfo-content p ,.bulkproductinfo-bottom-wrapper  .bottomproductinfo-content ul li{
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+@media (max-width: 450.98px){
+  .bulkproductinfo-bottom-wrapper .guideline-heading i{
+display: none;
+}
+
+}
+/* .bulk-selectproductinfo-wrapper */
+/* .bulk-selectproductinfolist */
+.bulk-selectproductinfolist-wrapper .bi-check-circle-fill{
+   color: var(--brand-green);
+   font-size: 14px;
+   font-weight:600;
+}.bulk-selectproductinfolist-wrapper .bi-info-circle{
+    color: red;
+}
+.bulk-selectproductinfolist-wrapper .bulkproduct-inner .submited-icon{
+    font-size: 14px;
+    color: var(--brand-green);
+}
+.bulk-selectproductinfolist-wrapper .bulkproduct-inner .bulkproduct-innerdetails span{
+    
+    font-size: 13px;
+}.bulk-selectproductinfolist-wrapper .bulkproduct-inner  .bulkproduct-innerdetails p{
+color: black;
+}
+/* .bulk-selectproductinfolist */

@@ -1189,3 +1189,28 @@ display: none;
 color: black;
 }
 /* .bulk-selectproductinfolist */
+/* bulkproductalllist */
+
+.bulkproductalllist .progress-color{
+    color: #2F80ED;
+}
+.bulkproductalllist .pending-color{
+    color: #F2C94C;
+}
+.bulkproductalllist .approve-color{
+    color: #81C115;
+}
+.bulkproductalllist .disapprove-color{
+    color: #EB5757;
+}
+.bulkproductalllist .expired-color{
+    color: #8A8A8A;
+}.bulkproductalllist .form-select{
+    border: none;
+    outline: none;
+    width: 140px;
+    font-weight: 600;
+    padding: 0;
+}
+
+/* bulkproductalllist */

@@ -237,7 +237,7 @@
    </div>
          </a>
  
-            <div class="collapse multi-collapse" id="usericon">
+                                            <div class="collapse multi-collapse" id="usericon">
                                                 <ul class="siderbar-collapse-menu"  aria-labelledby="collapse">
                                                 <li><a class="nav-link" href="#">Action</a></li>
                                                 <li><a class="nav-link" href="#">Another action</a></li>
@@ -262,22 +262,95 @@
         <div class="user-bottom-left">
             <nav  aria-label="breadcrumb">
   <ol class="breadcrumb  mb-1">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
-    <li class="breadcrumb-item " aria-current="page">
-        <a href="#">Add new Listing</a>
-    </li>
-   
+    <li class="breadcrumb-item"><a href="#">Inventory Health</a></li>
+ 
   </ol>
 </nav>
-<h5>Add Bulk Product</h5>
+<h5>Inventory Health</h5>
         </div>
-       
+         <div class="user-bottom-right">
+            <div class="user-listing-form">
+               <form class="row row-cols-lg-auto g-3 align-items-center">
+  <div class="col-12">
+    
+    <div class="input-group">
+    
+      <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Search product">
+        <div class="button-icon-bottom-left  ">
+            <button type="submit" class="btn ">  <i class="bi bi-search px-3"></i>Submit</button>
+           
+        </div>
+      
+    </div>
+  </div>
+
+</form>
+            </div>
+            
+        </div>
     </div>
    </div>
 </div>
 
-<div class="bulkproductalllist">
-    <div class="user-products-list-wrapper">
+<div id="inventory-health-stat-wrapper">
+    <div class="container">
+      <div class="inventory-health-inner">
+           <div class="row">
+                <div class="col-lg-2">
+                    <div class="product-listing-stat-innner">
+                       <div class="product-listing-stat-img bgc-brand-light-blue">
+                           <img src="./assets/images/mask.png" alt="">
+                           <div class="product-listing-stat-text">
+                               <p>02</p>
+                               <span>All inventory</span>
+                           </div>
+                       </div> 
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="product-listing-stat-innner">
+                       <div class="product-listing-stat-img bgc-brand-green">
+                           <img src="./assets/images/mask.png" alt="">
+                           <div class="product-listing-stat-text">
+                               <p>02</p>
+                               <span>Low Stock</span>
+                           </div>
+                       </div> 
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="product-listing-stat-innner">
+                       <div class="product-listing-stat-img bgc-dark-blue">
+                           <img src="./assets/images/mask.png" alt="">
+                           <div class="product-listing-stat-text">
+                               <p>02</p>
+                               <span>Out of Stock</span>
+                           </div>
+                       </div> 
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="product-listing-stat-innner">
+                       <div class="product-listing-stat-img bgc-brand-skyblue">
+                           <img src="./assets/images/mask.png" alt="">
+                           <div class="product-listing-stat-text">
+                               <p>02</p>
+                               <span>Recommendation</span>
+                           </div>
+                       </div> 
+                    </div>
+                </div>
+                           </div>
+                           <a href="" class="btn bgc-brand-orange text-white ">  Download Report</a>
+      </div>
+    </div>
+</div>
+
+
+
+
+<div class="inventory-health-product-list-wrapper">
+    <div class="user-products-list-wrapper ">
     <div class="container">
         <div class="user-products-list-inner-wrapper pt-3">
             <table>
@@ -288,34 +361,27 @@
                         Product Details
                     </td>
                     <td>
-                        <select class="form-select" aria-label="Default select example" required>
-  <option selected>Atributes</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-</select>
-                    </td>
-                    <td>
-                       Status
-                    </td>
-                    <td>
-                        comment
-                    </td>
-                    <td>
-                       <select class="form-select" aria-label="Default select example" required>
-  <option selected>Created On</option>
+                         <select class="form-select" aria-label="Default select example" required>
+  <option selected>Stock</option>
   <option value="1">One</option>
   <option value="2">Two</option>
   <option value="3">Three</option>
 </select> 
                     </td>
-                   
+                    <td>
+                        Sale Rate per Day
+                    </td>
+                    <td>
+                       Days on Hand
+                    </td>
+                    
+                
                 </tr>
             </thead>
             <tbody>
                 
                 <tr>
-                   
+                  
                     <td>
                        <div class="listing-product-detail">
                            <div class="listing-product-detail-image">
@@ -327,27 +393,22 @@
                             <span> Men shirt</span>
                             <h5>ID:223424</h5>
                               
-
                            </div>
                        </div>
                     </td>
                     <td>
-                       Nerozon
+                        599
                     </td>
                     <td>
-                        <span class="progress-color">In progress</span>
+                        599
                     </td>
                     <td>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        <span class="approve-color">Undefine</span> 
                     </td>
-                    <td>
-                       02-20-2020
-                    </td>
-                  
+                   
                 </tr>
-                
-                  <tr>
-                   
+                   <tr>
+                  
                     <td>
                        <div class="listing-product-detail">
                            <div class="listing-product-detail-image">
@@ -359,27 +420,22 @@
                             <span> Men shirt</span>
                             <h5>ID:223424</h5>
                               
-
                            </div>
                        </div>
                     </td>
                     <td>
-                       Nerozon
+                        599
                     </td>
                     <td>
-                        <span class="disapprove-color">Disapprove</span>
+                        599
                     </td>
                     <td>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        <span class="approve-color">Undefine</span> 
                     </td>
-                    <td>
-                       02-20-2020
-                    </td>
-                  
+                   
                 </tr>
-
                   <tr>
-                   
+                  
                     <td>
                        <div class="listing-product-detail">
                            <div class="listing-product-detail-image">
@@ -391,28 +447,22 @@
                             <span> Men shirt</span>
                             <h5>ID:223424</h5>
                               
-
                            </div>
                        </div>
                     </td>
                     <td>
-                      tata
+                        599
                     </td>
                     <td>
-                        <span class="expired-color">Expired</span>
+                        599
                     </td>
                     <td>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        <span class="disapprove-color">Undefine</span> 
                     </td>
-                    <td>
-                       02-20-2020
-                    </td>
-                  
+                   
                 </tr>
-
-
                   <tr>
-                   
+                  
                     <td>
                        <div class="listing-product-detail">
                            <div class="listing-product-detail-image">
@@ -424,29 +474,22 @@
                             <span> Men shirt</span>
                             <h5>ID:223424</h5>
                               
-
                            </div>
                        </div>
                     </td>
                     <td>
-                      tata
+                        599
                     </td>
                     <td>
-                        <span class="progress-color">In progress</span>
+                        599
                     </td>
                     <td>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        <span class="pending-color">Undefine</span> 
                     </td>
-                    <td>
-                       02-20-2020
-                    </td>
-                  
+                   
                 </tr>
-
-
-
                   <tr>
-                   
+                  
                     <td>
                        <div class="listing-product-detail">
                            <div class="listing-product-detail-image">
@@ -458,90 +501,19 @@
                             <span> Men shirt</span>
                             <h5>ID:223424</h5>
                               
-
                            </div>
                        </div>
                     </td>
                     <td>
-                       Nerozon
+                        599
                     </td>
                     <td>
-                        <span class="approve-color">Approve</span>
+                        599
                     </td>
                     <td>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        <span class="progress-color">Undefine</span> 
                     </td>
-                    <td>
-                       02-20-2020
-                    </td>
-                  
-                </tr>
-
-
-
-                  <tr>
                    
-                    <td>
-                       <div class="listing-product-detail">
-                           <div class="listing-product-detail-image">
-                               <img src="./assets/images/pro.png" alt="">
-                           </div>
-                           <div class="listing-product-detail-text">
-                               
-                               
-                            <span> Men shirt</span>
-                            <h5>ID:223424</h5>
-                              
-
-                           </div>
-                       </div>
-                    </td>
-                    <td>
-                       Nerozon
-                    </td>
-                    <td>
-                        <span class="pending-color">Pending</span>
-                    </td>
-                    <td>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    </td>
-                    <td>
-                       02-20-2020
-                    </td>
-                  
-                </tr>
-
-
-                  <tr>
-                   
-                    <td>
-                       <div class="listing-product-detail">
-                           <div class="listing-product-detail-image">
-                               <img src="./assets/images/pro.png" alt="">
-                           </div>
-                           <div class="listing-product-detail-text">
-                               
-                               
-                            <span> Men shirt</span>
-                            <h5>ID:223424</h5>
-                              
-
-                           </div>
-                       </div>
-                    </td>
-                    <td>
-                       Nerozon
-                    </td>
-                    <td>
-                        <span class="progress-color">In progress</span>
-                    </td>
-                    <td>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    </td>
-                    <td>
-                       02-20-2020
-                    </td>
-                  
                 </tr>
             </tbody>
         </table>
@@ -550,7 +522,10 @@
 </div>
 </div>
 
-</div>
+    </div>
+
+
+
 
 
     <!--bootstrap js  -->

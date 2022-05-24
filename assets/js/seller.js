@@ -8,6 +8,7 @@ $(document).ready(function () {
   $("#close-icon-sidebar").click(function () {
     $("#user-sidebar-menu-wrapper").toggle(4000);
   });
+  // list-managment checbox
   selectprod();
   function selectprod() {
     $("#listing-select-all-product").click(selectallproduct);
@@ -19,32 +20,20 @@ $(document).ready(function () {
       selectprod();
     });
   }
-  // select product page
-  // $("#select-new-product-category-main-wrapper ul li").click(function () {
-  //   $(this).addClass("active");
-  //   $("#select-new-product-category-main-wrapper ul .active #select-new-product-category-sub-wrapper"
-  //   ).css("display", "block");
-  //      $("#select-new-product-category-main-wrapper ul .active  ul li").click(
-  //        function () {
-  //          $("#select-new-product-category-main-wrapper ul .active  ul li").removeClass("active");
-  //          $(this).addClass("active");
-           
-  //          $("#select-new-product-category-main-wrapper ul  .active #select-new-product-category-sub-wrapper ul .active #category-sub-inner-wrapper"
-  //          ).toggle();
-
-          
-            
-           
-  //        }
-
-  //   );
-      
-   
-  // });
-
-  
- 
-  // select product page
+  // list-managment checbox
+  // order-list-managment checbox
+  orderselectprod();
+  function orderselectprod() {
+    $("#order-listing-select-all-product").click(orderselectallproduct);
+  }
+  function orderselectallproduct() {
+    $(".order-listing-select-product").attr("checked", "checked");
+    $("#order-listing-select-all-product").click(function () {
+      $(".order-listing-select-product").removeAttr("checked");
+      orderselectprod();
+    });
+  }
+  //order- list-managment checbox
 });
-// user sidebarscript
+
 // user dashboard

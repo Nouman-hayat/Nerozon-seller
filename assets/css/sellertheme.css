@@ -466,6 +466,13 @@ margin-bottom: 2px;
     font-weight: 500;
     
 }
+.user-products-list-inner-wrapper .form-select{
+    border: none;
+    outline: none;
+    width: 140px;
+    font-weight: 600;
+    padding: 0;
+}
 
 @media (max-width: 991.98px) {
    .user-bottom-right .input-group input{
@@ -1271,6 +1278,10 @@ font-size: 12px;
 padding-left: 5px !important;
 padding-right: 5px!important;
 }
+.listorder-productlist-wrapper table p{
+font-size: 13px;
+margin-bottom: 2px;
+}
 
 @media (max-width: 1200.98px){
    .listorder-top-action-wrapper .listorder-top-action-left-wrapper{
@@ -1301,12 +1312,25 @@ grid-template-columns: repeat(4, 1fr);
 .listorder-top-action-wrapper .btn{
     margin-bottom: 10px;
 }
+.listorder-productlist-wrapper .user-products-list-inner-wrapper table{
+    width: 600px;
 }
+  .listorder-productlist-wrapper .user-products-list-inner-wrapper table{
+    width: 1200px;
+}
+}
+
 @media (max-width: 575.98px){
   .listorder-top-action-wrapper .row{
 display: flex;
 flex-direction: column;
+width: 100%;
  
+} .listorder-top-action-wrapper .listorder-top-action-inner-wrapper>*{
+    width: 100%;
+} .listorder-top-action-wrapper .listorder-top-action-left-wrapper{
+  
+    margin-right: 0px;;
 }
 .listorder-top-action-wrapper .listorder-top-action-inner-wrapper{
     display: flex;

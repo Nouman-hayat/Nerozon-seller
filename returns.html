@@ -258,32 +258,38 @@
 
 <div id="user-bottom-header">
    <div class="container">
-        <div class="user-bottom-inner-wrapper">
+        <div class="user-bottom-inner-wrapper .return-header">
         <div class="user-bottom-left">
             <nav  aria-label="breadcrumb">
   <ol class="breadcrumb  mb-1">
     <li class="breadcrumb-item"><a href="#">Home</a></li>
     <li class="breadcrumb-item active" aria-current="page">
-        <a href="#">Listing Management</a>
+        <a href="#">My Orders</a>
     </li>
   </ol>
 </nav>
-<h5>Listing Management</h5>
+<h5>Returns</h5>
         </div>
         <div class="user-bottom-right">
+          
             <div class="user-listing-form">
                <form class="row row-cols-lg-auto g-3 align-items-center">
   <div class="col-12">
     
     <div class="input-group">
-    
+         <div> <a href="" class="policy-bar-link">Return policy</a></div>
       <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Search product">
         <div class="button-icon-bottom-left  me-4">
             <button type="submit" class="btn ">  <i class="bi bi-search px-3"></i>Submit</button>
            
         </div>
         <div class="button-icon-bottom-right">
-   <a href="./addnewlist.html" class="btn">Add New Listing</a>
+  <select class="form-select" aria-label="Default select example" required>
+  <option selected>Pune-3232</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
         </div>
     </div>
   </div>
@@ -296,251 +302,28 @@
    </div>
 </div>
 
-<div id="product-listing-stat-wrapper">
+
+
+
+<div class="order-returns-wrapper">
     <div class="container">
-       <div class="row">
-                <div class="col-md-2">
-                    <div class="product-listing-stat-innner">
-                     <a href=""> 
-                          <div class="product-listing-stat-img bgc-brand-light-blue">
-                           <img src="./assets/images/mask.png" alt="">
-                           <div class="product-listing-stat-text">
-                               <p>02</p>
-                               <span>Active Listing</span>
-                           </div>
-                       </div></a> 
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="product-listing-stat-innner">
-                      <a href="">
-                           <div class="product-listing-stat-img bgc-brand-green">
-                           <img src="./assets/images/mask.png" alt="">
-                           <div class="product-listing-stat-text">
-                               <p>02</p>
-                               <span>Ready for Activation</span>
-                           </div>
-                       </div>
-                      </a> 
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="product-listing-stat-innner">
-                      <a href="">
-
-                         <div class="product-listing-stat-img bgc-dark-blue">
-                           <img src="./assets/images/mask.png" alt="">
-                           <div class="product-listing-stat-text">
-                               <p>02</p>
-                               <span>Blocked Listing</span>
-                           </div>
-                       </div>
-                      </a> 
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="product-listing-stat-innner">
-                     <a href="">
-                           <div class="product-listing-stat-img bgc-brand-skyblue">
-                           <img src="./assets/images/mask.png" alt="">
-                           <div class="product-listing-stat-text">
-                               <p>02</p>
-                               <span>Inactive Listing</span>
-                           </div>
-                       </div>
-                     </a> 
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="product-listing-stat-innner">
-                     <a href="">
-                           <div class="product-listing-stat-img bgc-brand-orange">
-                           <img src="./assets/images/mask.png" alt="">
-                           <div class="product-listing-stat-text">
-                               <p>02</p>
-                               <span>Archived Listing</span>
-                           </div>
-                       </div>
-                     </a> 
-                    </div>
-                </div>
-            </div>
-    </div>
+        <div class="order-return-inner-wrapper">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="approved-tab" data-bs-toggle="tab" data-bs-target="#approved" type="button" role="tab" aria-controls="approved" aria-selected="true">Approved</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="completed-tab" data-bs-toggle="tab" data-bs-target="#completed" type="button" role="tab" aria-controls="completed" aria-selected="false">Completed</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="transit-tab" data-bs-toggle="tab" data-bs-target="#transit" type="button" role="tab" aria-controls="transit" aria-selected="false">In Transit</button>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="approved" role="tabpanel" aria-labelledby="approved-tab">approved</div>
+  <div class="tab-pane fade" id="completed" role="tabpanel" aria-labelledby="completed-tab">completed</div>
+  <div class="tab-pane fade" id="transit" role="tabpanel" aria-labelledby="transit-tab">transit</div>
 </div>
-
-<div class="mylisting-top-action">
-    <div id="listing-top-action">
-       <div class="container">
-           <div class="listing-top-action-inner">
-               <div class="listing-top-action-left">
-                   <div class="listing-top-action-left-inner">
-                       <div class="form-floating ">
-      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-        <option selected>bulk</option>
-        <option value="low">low to high</option>
-        <option value="high">high to low</option>
-       
-      </select>
-     
-    </div>
-     <a href="" class="btn bgc-brand-orange text-white mx-4"> Request Download</a>
-      <a href="" class="btn text-black bg-white  px-5"> Upload</a>
-                   
-                   </div>
-                   
-               </div>
-                <div class="listing-top-action-right">
-                   <div class="listing-top-action-right-inner">
-                      
-    <div class="form-floating ">
-      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-        <option selected>Sort by</option>
-        <option value="low">low to high</option>
-        <option value="high">high to low</option>
-       
-      </select>
-     
-    </div>
-    <div class="form-floating">
-      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-        <option selected>Category by</option>
-        <option value="low">low to high</option>
-        <option value="high">high to low</option>
-       
-      </select>
-     
-    </div>
-    
-                   </div>
-                   
-               </div>
-           </div>
-       </div>
-    </div>
-</div>
-
-
-<div class="user-products-list-wrapper">
-    <div class="container">
-        <div class="user-products-list-inner-wrapper pt-3">
-            <table>
-            <thead>
-                <tr >
-                    <td>
-                        <input type="checkbox" id="listing-select-all-product">
-                    </td>
-                    <td>
-                        Product Details
-                    </td>
-                    <td>
-                        M.R.P
-                    </td>
-                    <td>
-                        Listing Price
-                    </td>
-                    <td>
-                        Stock
-                    </td>
-                    <td>
-                        Category
-                    </td>
-                    <td>
-                        Additional info
-                    </td>
-                    <td>
-                        Action
-                    </td>
-                
-                </tr>
-            </thead>
-            <tbody>
-                
-                <tr>
-                    <td class="mt-3">
-                        <input type="checkbox"  class="listing-select-product">
-                    </td>
-                    <td>
-                       <div class="listing-product-detail">
-                           <div class="listing-product-detail-image">
-                               <img src="./assets/images/pro.png" alt="">
-                           </div>
-                           <div class="listing-product-detail-text">
-                               
-                               
-                            <span> Men shirt</span>
-                            <h5>ID:223424</h5>
-                               <p>2-03-2022 | 10:30AM</p>
-
-                           </div>
-                       </div>
-                    </td>
-                    <td>
-                        599
-                    </td>
-                    <td>
-                        599
-                    </td>
-                    <td>
-                        12
-                    </td>
-                    <td>
-                        shirt
-                    </td>
-                   <td>
-        <a href="" class="me-2"><i class="bi bi-box-arrow-up-right"></i></a>
-        <a href=""><i class="bi bi-calculator"></i></a>
-                   </td>
-                   <td>
-                       <div class="d-flex justify-content-between">
-                   <a href="" class="list-product-deactive me-2">Deactive</a>
-                          <a href=""><i class="bi bi-pencil-square"></i></a>
-                       </div>
-                   </td>
-                </tr>
-                 <tr>
-                    <td class="mt-3">
-                        <input type="checkbox" class="listing-select-product">
-                    </td>
-                    <td>
-                       <div class="listing-product-detail">
-                           <div class="listing-product-detail-image">
-                               <img src="./assets/images/pro.png" alt="">
-                           </div>
-                           <div class="listing-product-detail-text">
-                               
-                               
-                            <span> Men shirt</span>
-                            <h5>ID:223424</h5>
-                               <p>2-03-2022 | 10:30AM</p>
-
-                           </div>
-                       </div>
-                    </td>
-                    <td>
-                        599
-                    </td>
-                    <td>
-                        599
-                    </td>
-                    <td>
-                        12
-                    </td>
-                    <td>
-                        shirt
-                    </td>
-                   <td>
-        <a href="" class="me-2"><i class="bi bi-box-arrow-up-right"></i></a>
-        <a href=""><i class="bi bi-calculator"></i></a>
-                   </td>
-                   <td>
-                       <div class="d-flex justify-content-between">
-                   <a href="" class="list-product-deactive me-2">Deactive</a>
-                          <a href=""><i class="bi bi-pencil-square"></i></a>
-                       </div>
-                   </td>
-                </tr>
-            </tbody>
-        </table>
         </div>
     </div>
 </div>

@@ -434,7 +434,7 @@
     <div class="mb-3">
     
       <label for="exampleFormControlInput11" class="form-label"> ornamentation type</label>
-    <div class="row">
+    <div class="row" id="ornamentation">
     <div class="col-9">
  <select class="form-select" aria-label="Default select example" required>
   <option selected>Select one</option>
@@ -445,7 +445,7 @@
     </div>
    <div class="col-3">
         <div class="d-flex justify-content-end">
-            <button class="btn  btn-plus">+</button>
+            <button class="btn  btn-plus" id="ornamentation-btn">+</button>
         </div>
     </div>
 </div>
@@ -470,7 +470,7 @@
      <div class="mb-3">
     
       <label for="exampleFormControlInput11" class="form-label">EAN/UPC</label>
-    <div class="row">
+    <div class="row" id="ean-upc">
     <div class="col-9">
  <select class="form-select" aria-label="Default select example" required>
   <option selected>Select one</option>
@@ -481,7 +481,7 @@
     </div>
     <div class="col-3">
         <div class="d-flex justify-content-end">
-            <button class="btn  btn-plus">+</button>
+            <button class="btn  btn-plus" id="ean-upc-btn">+</button>
         </div>
     </div>
 </div>
@@ -500,7 +500,7 @@
       <div class="mb-3">
     
       <label for="exampleFormControlInput11" class="form-label"> Season</label>
-    <div class="row">
+    <div class="row" id="season">
     <div class="col-9">
  <select class="form-select" aria-label="Default select example" required>
   <option selected>Select one</option>
@@ -511,7 +511,7 @@
     </div>
    <div class="col-3">
         <div class="d-flex justify-content-end">
-            <button class="btn  btn-plus">+</button>
+            <button class="btn  btn-plus" id="season-btn">+</button>
         </div>
     </div>
 </div>
@@ -519,15 +519,15 @@
     <div class="mb-3">
       <label for="exampleFormControlInput12" class="form-label"> Description
     </label>
-      <input type="text" class="form-control" id="exampleFormControlInput12" >
+      <textarea type="text" class="form-control" rows="4" id="exampleFormControlInput12" ></textarea>
     </div>
      
    
       <div class="mb-3">
     
       <label for="exampleFormControlInput11" class="form-label"> Search Keyword</label>
-    <div class="row">
-    <div class="col-9">
+    <div class="row" id="search-keyword">
+    <div class="col-9" >
  <select class="form-select" aria-label="Default select example" required>
   <option selected>Select one</option>
   <option value="1">One</option>
@@ -537,7 +537,7 @@
     </div>
    <div class="col-3">
         <div class="d-flex justify-content-end">
-            <button class="btn  btn-plus">+</button>
+            <button class="btn  btn-plus" id="search-keyword-btn">+</button>
         </div>
     </div>
 </div>
@@ -555,7 +555,7 @@
       <div class="mb-3">
     
       <label for="exampleFormControlInput11" class="form-label"> Trend</label>
-    <div class="row">
+    <div class="row" id="trend">
     <div class="col-9">
  <select class="form-select" aria-label="Default select example" required>
   <option selected>Select one</option>
@@ -566,7 +566,7 @@
     </div>
    <div class="col-3">
         <div class="d-flex justify-content-end">
-            <button class="btn  btn-plus">+</button>
+            <button class="btn  btn-plus" id="trend-btn">+</button>
         </div>
     </div>
 </div>
@@ -574,7 +574,7 @@
       <div class="mb-3">
     
       <label for="exampleFormControlInput11" class="form-label"> Pattern / print type</label>
-    <div class="row">
+    <div class="row" id="pattern">
     <div class="col-9">
  <select class="form-select" aria-label="Default select example" required>
   <option selected>Select one</option>
@@ -585,7 +585,7 @@
     </div>
    <div class="col-3">
         <div class="d-flex justify-content-end">
-            <button class="btn  btn-plus">+</button>
+            <button class="btn  btn-plus" id="pattern-btn">+</button>
         </div>
     </div>
 </div>
@@ -593,7 +593,7 @@
         <div class="mb-3">
     
       <label for="exampleFormControlInput11" class="form-label"> Secondary color</label>
-    <div class="row">
+    <div class="row" id="secondary-color">
     <div class="col-9">
  <select class="form-select" aria-label="Default select example" required>
   <option selected>Select one</option>
@@ -604,7 +604,7 @@
     </div>
     <div class="col-3">
         <div class="d-flex justify-content-end">
-            <button class="btn  btn-plus">+</button>
+            <button class="btn  btn-plus" id="secondary-color-btn">+</button>
         </div>
     </div>
 </div>
@@ -617,7 +617,7 @@
                    <div class="mb-3">
     
       <label for="exampleFormControlInput11" class="form-label"> Trend AW16</label>
-    <div class="row">
+    <div class="row" id="aw16">
     <div class="col-9">
  <select class="form-select" aria-label="Default select example" required>
   <option selected>Select one</option>
@@ -628,7 +628,7 @@
     </div>
     <div class="col-3">
         <div class="d-flex justify-content-end">
-            <button class="btn  btn-plus">+</button>
+            <button class="btn  btn-plus" id="aw16-btn">+</button>
         </div>
     </div>
 </div>
@@ -649,7 +649,7 @@
     <div class="mb-3">
     
       <label for="exampleFormControlInput11" class="form-label"> closure</label>
-    <div class="row">
+    <div class="row" id="closure">
     <div class="col-9">
  <select class="form-select" aria-label="Default select example" required>
   <option selected>Select one</option>
@@ -660,7 +660,7 @@
     </div>
     <div class="col-3">
         <div class="d-flex justify-content-end">
-            <button class="btn  btn-plus">+</button>
+            <button class="btn  btn-plus" id="closure-btn">+</button>
         </div>
     </div>
 </div>
@@ -671,7 +671,7 @@
     <div class="mb-3">
     
       <label for="exampleFormControlInput11" class="form-label"> Other Dimension</label>
-    <div class="row">
+    <div class="row" id="other-dimension">
     <div class="col-9">
  <select class="form-select" aria-label="Default select example" required>
   <option selected>Select one</option>
@@ -682,7 +682,7 @@
     </div>
     <div class="col-3">
         <div class="d-flex justify-content-end">
-            <button class="btn  btn-plus">+</button>
+            <button class="btn  btn-plus" id="other-dimension-btn">+</button>
         </div>
     </div>
 </div>
@@ -693,7 +693,7 @@
     <div class="mb-3">
     
       <label for="exampleFormControlInput11" class="form-label">Other Details</label>
-    <div class="row">
+    <div class="row" id="other-detail">
     <div class="col-9">
  <select class="form-select" aria-label="Default select example" required>
   <option selected>Select one</option>
@@ -704,7 +704,7 @@
     </div>
    <div class="col-3">
         <div class="d-flex justify-content-end">
-            <button class="btn  btn-plus">+</button>
+            <button class="btn  btn-plus" id="other-detail-btn">+</button>
         </div>
     </div>
 </div>
@@ -715,7 +715,7 @@
     <div class="mb-3">
     
       <label for="exampleFormControlInput11" class="form-label"> Sale package</label>
-    <div class="row">
+    <div class="row" id="sale-package">
     <div class="col-9">
  <select class="form-select" aria-label="Default select example" required>
   <option selected>Select one</option>
@@ -726,7 +726,7 @@
     </div>
     <div class="col-3">
         <div class="d-flex justify-content-end">
-            <button class="btn  btn-plus">+</button>
+            <button class="btn  btn-plus" id="sale-package-btn">+</button>
         </div>
     </div>
 </div>
@@ -737,7 +737,7 @@
     <div class="mb-3">
     
       <label for="exampleFormControlInput11" class="form-label">Domestic Warranty</label>
-    <div class="row">
+    <div class="row" id="domestic-warranty">
     <div class="col-9">
  <select class="form-select" aria-label="Default select example" required>
   <option selected>Select one</option>
@@ -748,7 +748,7 @@
     </div>
    <div class="col-3">
         <div class="d-flex justify-content-end">
-            <button class="btn  btn-plus">+</button>
+            <button class="btn  btn-plus" id="domestic-warranty-btn">+</button>
         </div>
     </div>
 </div>

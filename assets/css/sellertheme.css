@@ -956,7 +956,7 @@ font-size: 13px;
 
 /* select product info image */
 
-.newlisting-selectproductinfo-overlay-inner{
+.newlisting-selectproductinfo-overlay-inner ,.return-ticket-overlay-inner{
      position: fixed;
     width: 100%;
     height: 100%;
@@ -967,7 +967,7 @@ font-size: 13px;
    
 }
 
-.newlisting-selectproductinfo-overlay-content{
+.newlisting-selectproductinfo-overlay-content {
     position:absolute;
     width: 70%;
     padding: 30px;
@@ -1474,6 +1474,9 @@ width: 100%;
     font-size: 12px;
     color: white;
     margin-top: 20px;
+}.return-content-menu-table .user-products-list-wrapper table .claimed{
+    color: var(--brand-orange)!important;
+    border-color: var(--brand-orange);
 }
 @media (max-width: 430.98px){
 .user-bottom-right .policy-bar-link{
@@ -1486,3 +1489,66 @@ width: 100%;
 }
 }
 /* return policy */
+/* return-ticket */
+
+.return-ticket-overlay-content-wrapper{
+    position:absolute;
+    width: 40%;
+    padding: 30px;
+    opacity: unset;
+    top:5%;
+    left: 50%;
+    display: none;
+    transform: translate(-50%,0%);
+    background-color: white;
+    z-index: 9999;
+    -webkit-transform: translate(-50%,0%);
+    -moz-transform: translate(-50%,0%);
+    -ms-transform: translate(-50%,0%);
+    -o-transform: translate(-50%,0%);
+}.return-ticket-overlay-inner{
+    display: none;
+}
+.return-ticket-overlay-content-wrapper h4{
+    color: var(--brand-orange);
+    text-align: center;
+    margin-bottom: 30px;
+    
+}.return-ticket-overlay-content-wrapper p{
+    font-weight: 600;
+    margin-bottom:5px;
+}.return-ticket-overlay-content-wrapper p span{
+    font-weight: 100;
+}.return-ticket-overlay-content-wrapper .form-label{
+    font-size: 14px;
+    color: rgba(0, 36, 72, 0.6);
+}.return-ticket-overlay-content-wrapper h5{
+    font-size: 16px ;
+    margin-bottom: 5px;
+}.form-number-input{
+    position: relative;
+}.form-inner-code{
+    position: absolute;
+    left: 2%;
+    top: 15%;
+}.form-number{
+    padding-left: 50px;
+}.return-close-btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+@media (max-width: 992.98px){
+.return-ticket-overlay-content-wrapper{
+    width: 70%;
+}
+}
+@media (max-width: 575.98px){
+.return-ticket-overlay-content-wrapper{
+    width: 97%;
+}.return-ticket-form-wrapper .form-control ,.return-ticket-form-wrapper .form-select{
+    font-size: 15px;
+}
+}
+/* return-ticket */

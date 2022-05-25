@@ -184,7 +184,7 @@ $(document).ready(function () {
   }
   //order-rta- list-managment checbox
   //label update page
- labelupdateselectprod();
+  labelupdateselectprod();
   function labelupdateselectprod() {
     $("#label-update-select-all-product").click(labelupdateselectallproduct);
   }
@@ -192,10 +192,25 @@ $(document).ready(function () {
     $(".label-update-select-product").attr("checked", "checked");
     $("#label-update-select-all-product").click(function () {
       $(".label-update-select-product").removeAttr("checked");
-     labelupdateselectprod();
+      labelupdateselectprod();
     });
   }
   //label update page
+
+  // return ticket page
+  $(".claimed-btn").click(closereturnticketpopup);
+   $(".return-close-btn").click(closereturnticketpopup);
+  $(".return-ticket-overlay-inner").click(closereturnticketpopup);
+  function closereturnticketpopup() {
+     $(
+       ".return-ticket-overlay-content-wrapper , .return-ticket-overlay-inner"
+    ).toggle();
+    $(window).scrollTop(0)
+  }
+  // return ticket page
 });
+
+
+
 
 // user dashboard

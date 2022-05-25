@@ -83,6 +83,18 @@
     font-size: 15px;
 }
 
+.form-check-input:checked{
+    background-color: var(--brand-orange);
+    border-color: var(--brand-orange);
+   
+}
+.form-check-input:focus ,.form-select:focus ,.btn:focus,.form-control:focus{
+ box-shadow: none; 
+  border-color: #d4d4d4;
+
+}
+
+
 
 /* header start */
 

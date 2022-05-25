@@ -1403,36 +1403,86 @@ width: 100%;
 .order-returns-wrapper{
      padding: 50px 0;
      background-color: #E5E5E5;
-}.order-return-inner-wrapper .nav-tabs{
+}.order-return-inner-wrapper .nav-pills{
     border: none;
-}.order-return-inner-wrapper .nav-tabs .nav-link {
+}.order-return-inner-wrapper .nav-pills .nav-link {
     color:#97A6B1;
     outline: none;
 }
-.order-return-inner-wrapper .nav-tabs .nav-link.active{
+.order-return-inner-wrapper .nav-pills .nav-link.active{
     color: black;
     background-color: transparent;
     border: unset ;
     border-bottom: 2px solid #EC7C03;
     outline: none;
 
+} .order-returns-wrapper .user-products-list-inner-wrapper{
+    overflow-x: unset;
+}
+.order-return-inner-wrapper{
+    overflow-x: scroll;
+  
+}
+.order-return-inner-wrapper::-webkit-scrollbar {
+  width: 2px;
+ 
+}
+ 
+.order-return-inner-wrapper::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px rgba(175, 175, 175, 0.3);
+ 
 }
 
+.order-return-inner-wrapper::-webkit-scrollbar-thumb {
+  background-color: rgb(165, 165, 165);
+  outline: 1px solid rgb(172, 172, 172);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
 .user-bottom-right .policy-bar-link{
     color: var(--brand-green);
     display: inline-block;
     margin: 10px 10px 0 0;
 }.return-filter-product{
     padding: 20px;
+   margin-bottom: 15px;
     background-color: white;
-}.return-filter-product h5{
+}.return-filter-product.margin-sect{
+ margin-top: 32px;
+}
+.return-filter-product h5{
     font-size: 14px;
     font-weight: 700;
+}.return-filter-product .form-check-label {
+    font-size: 14px;
+}
+
+ .return-content-menu-table .user-products-list-wrapper {
+    background-color: transparent;
+}.return-content-menu-table .user-products-list-wrapper table td p{
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}.return-content-menu-table .user-products-list-wrapper table td p span{
+    font-weight: 100;
+}.return-content-menu-table .user-products-list-inner-wrapper table tbody tr td{
+    padding: 20px 10px;
+}.return-content-menu-table .user-products-list-wrapper table td .btn{
+    padding: 5px 10px ;
+    font-size: 12px;
+    color: white;
+    margin-top: 20px;
 }
 @media (max-width: 430.98px){
 .user-bottom-right .policy-bar-link{
     display: block;
     width: 300px ;
+}
+}@media (max-width: 1200.98px){
+.order-return-content-inner-wrapper{
+    width: 1200px;
 }
 }
 /* return policy */

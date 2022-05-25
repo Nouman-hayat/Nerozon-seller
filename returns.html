@@ -308,24 +308,28 @@
 <div class="order-returns-wrapper">
     <div class="container">
         <div class="order-return-inner-wrapper">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
+       
+            <div class="order-return-content-inner-wrapper">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
   <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="approved-tab" data-bs-toggle="tab" data-bs-target="#approved" type="button" role="tab" aria-controls="approved" aria-selected="true">Approved</button>
+    <button class="nav-link active" id="pills-approve-tab" data-bs-toggle="pill" data-bs-target="#pills-approve" type="button" role="tab" aria-controls="pills-approve" aria-selected="true">Approved</button>
   </li>
   <li class="nav-item" role="presentation">
-    <button class="nav-link" id="completed-tab" data-bs-toggle="tab" data-bs-target="#completed" type="button" role="tab" aria-controls="completed" aria-selected="false">Completed</button>
+    <button class="nav-link" id="pills-completed-tab" data-bs-toggle="pill" data-bs-target="#pills-completed" type="button" role="tab" aria-controls="pills-completed" aria-selected="false">Completed</button>
   </li>
   <li class="nav-item" role="presentation">
-    <button class="nav-link" id="transit-tab" data-bs-toggle="tab" data-bs-target="#transit" type="button" role="tab" aria-controls="transit" aria-selected="false">In Transit</button>
+    <button class="nav-link" id="pills-transit-tab" data-bs-toggle="pill" data-bs-target="#pills-transit" type="button" role="tab" aria-controls="pills-transit" aria-selected="false">In transit</button>
   </li>
 </ul>
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="approved" role="tabpanel" aria-labelledby="approved-tab">
-<div class="approved-return-wrapper py-4">
-    <div class="row">
-        <div class="col-3">
-             <form class="row row-cols-lg-auto g-3 align-items-center">
-  <div class="col-12">
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-approve" role="tabpanel" aria-labelledby="pills-approve-tab">
+
+
+   <div class="return-content-menu-table">
+       <div class="row">
+           <div class="col-3">
+                 <form class="row row-cols-lg-auto g-3 align-items-center">
+            <div class="col-12">
     
     <div class="input-group">
         
@@ -336,10 +340,12 @@
         </div>
        
     </div>
-  </div>
+            </div>
 
-</form>
-<div class="return-filter-product">
+               </form>
+
+
+    <div class="return-filter-product margin-sect">
     <h5>Physical Delivery</h5>
    
   <form class="row g-3">
@@ -363,53 +369,696 @@
  
 </form>
 </div>
-<div class="return-filter-product mt-2">
-    <h5>Physical Delivery</h5>
+ <div class="return-filter-product ">
+    <h5>Sort by</h5>
    
   <form class="row g-3">
 
   <div class="form-check mt-3">
-                                        <input class="form-check-input" type="radio" name="gstradio" id="Radiosbtn1" value="option1" checked>
-                                        <label class="form-check-label" for="Radiosbtn1">
-  Latest Approval Date
-  </label>
+                                        <input class="form-check-input" type="radio" name="return" id="Radiosbtnr1" value="option1" checked>
+ 
+  <label class="form-check-label" for="Radiosbtnr1">  Latest Approval Date </label>
+
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="gstradio" id="Radiosbtn2" value="option2">
-                                        <label class="form-check-label" for="Radiosbtn2">
-   I Will only sell in GSTN excapt case
+                                        <input class="form-check-input" type="radio" name="return" id="Radiosbtnr2" value="option2">
+                                        <label class="form-check-label" for="Radiosbtnr2">
+  Oldest Approval Date
   </label>
+ 
+</div>
+
+</form>
+</div>
+
+           </div>
+           <div class="col-9">
+                <form class="row row-cols-lg-auto g-3 align-items-center">
+            <div class="col-12">
+    
+    <div class="input-group d-flex align-items-center ">
+        <label class="form-label me-4" for="gridCheck">
+     Returned Approved
+      </label> 
+      <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="On and From/To">
+       
+       
+    </div>
+            </div>
+
+               </form>
+
+
+              <div class="user-products-list-wrapper">
+     <div class="user-products-list-inner-wrapper ">
+            <table>
+            <thead>
+                <tr >
+                   
+                    <td>
+                        Order  Details
+                    </td>
+                    <td>
+                       Qty & Price
+                    </td>
+                    <td>
+                       Return Detail
+                    </td>
+                    <td>
+                        Return Reason
+                    </td>
+                    <td>
+                        Tracking Details
+                    </td>
+                 
+                   
+                
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                   
+                    <td>
+                       <div class="listing-product-detail">
+                           <div class="listing-product-detail-image">
+                               <img src="./assets/images/pro.png" alt="">
+                           </div>
+                           <div class="listing-product-detail-text">
+                               
+                               
+                            <span> Men shirt</span>
+                            <h5>shirt SKU:223424</h5>
+                              
+
+                           </div>
+                       </div>
+                    </td>
+                    <td>
+                        <p>Qty: <span>12</span></p>
+                         <p>Price: <span>500</span></p>
+                    </td>
+                    <td>
+                       <p>Return ID: <span>12898</span></p>
+                         <p>Request Date: <span> 1-May-2020, 09:20AM</span></p>
+                          <p> Delivery Date:  <span>1-May-2020, 09:20AM</span></p>
+                           <p>Tracking ID: <span> 1245457845</span></p>
+                            <p>Return Type: <span> Customer Return</span></p>
+                             <p>Request Type: <span>  Refund</span></p>
+                    </td>
+                    <td>
+                        <p>Customer Return Reason: </p>
+                        <span> Quality Issue</span>
+                    </td>
+                   <td>
+                        <p>Tracking ID:</p>
+                         <span>1245457854</span>
+                    </td>
+                  
+                </tr>
+                 <tr>
+                   
+                    <td>
+                       <div class="listing-product-detail">
+                           <div class="listing-product-detail-image">
+                               <img src="./assets/images/pro.png" alt="">
+                           </div>
+                           <div class="listing-product-detail-text">
+                               
+                               
+                            <span> Men shirt</span>
+                            <h5>shirt SKU:223424</h5>
+                              
+
+                           </div>
+                       </div>
+                    </td>
+                    <td>
+                        <p>Qty: <span>22</span></p>
+                         <p>Price: <span>800</span></p>
+                    </td>
+                    <td>
+                       <p>Return ID: <span>12898</span></p>
+                         <p>Request Date: <span> 1-May-2020, 09:20AM</span></p>
+                          <p> Delivery Date:  <span>1-May-2020, 09:20AM</span></p>
+                           <p>Tracking ID: <span> 1245457845</span></p>
+                            <p>Return Type: <span> Customer Return</span></p>
+                             <p>Request Type: <span>  Refund</span></p>
+                    </td>
+                    <td>
+                        <p>Customer Return Reason: </p>
+                        <span> Quality Issue</span>
+                    </td>
+                   <td>
+                        <p>Tracking ID:</p>
+                         <span>7245457854</span>
+                    </td>
+                  
+                </tr>
+                  <tr>
+                   
+                    <td>
+                       <div class="listing-product-detail">
+                           <div class="listing-product-detail-image">
+                               <img src="./assets/images/pro.png" alt="">
+                           </div>
+                           <div class="listing-product-detail-text">
+                               
+                               
+                            <span> Men shirt</span>
+                            <h5>shirt SKU:223424</h5>
+                              
+
+                           </div>
+                       </div>
+                    </td>
+                    <td>
+                        <p>Qty: <span>32</span></p>
+                         <p>Price: <span>200</span></p>
+                    </td>
+                    <td>
+                       <p>Return ID: <span>32898</span></p>
+                         <p>Request Date: <span> 1-May-2020, 09:20AM</span></p>
+                          <p> Delivery Date:  <span>1-May-2020, 09:20AM</span></p>
+                           <p>Tracking ID: <span> 1245457845</span></p>
+                            <p>Return Type: <span> Customer Return</span></p>
+                             <p>Request Type: <span>  Refund</span></p>
+                    </td>
+                    <td>
+                        <p>Customer Return Reason: </p>
+                        <span> Quality Issue</span>
+                    </td>
+                   <td>
+                        <p>Tracking ID:</p>
+                         <span>2245457854</span>
+                    </td>
+                  
+                </tr>
+            </tbody>
+        </table>
+        </div>
+</div>
+           </div>
+       </div>
+   </div>
+
+
+
+
+
+  </div>
+  <div class="tab-pane fade" id="pills-completed" role="tabpanel" aria-labelledby="pills-completed-tab">
+
+
+     <div class="return-content-menu-table">
+       <div class="row">
+           <div class="col-3">
+                 <form class="row row-cols-lg-auto g-3 align-items-center">
+            <div class="col-12">
+    
+    <div class="input-group">
+        
+      <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Search product">
+        <div class="button-icon-bottom-left">
+            <button type="submit" class="btn bgc-brand-orange text-white ">  <i class="bi bi-search px-3"></i>Submit</button>
+           
+        </div>
+       
+    </div>
+            </div>
+
+               </form>
+
+
+    <div class="return-filter-product margin-sect">
+    <h5>Physical Delivery</h5>
+   
+  <form class="row g-3">
+
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+      Expect
+      </label>
+    </div>
+  </div>
+   <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck1">
+      <label class="form-check-label" for="gridCheck1">
+        Don't Expect
+      </label>
+    </div>
+  </div>
  
 </form>
 </div>
-        </div>
-        <div class="col-9">
-            <form>
-  <div class="row mb-3">
-    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control" id="inputEmail3">
-    </div>
-  </div>
-  
-  <button type="submit" class="btn btn-primary">Sign in</button>
+ <div class="return-filter-product ">
+    <h5>Sort by</h5>
+   
+  <form class="row g-3">
+
+  <div class="form-check mt-3">
+                                        <input class="form-check-input" type="radio" name="return" id="Radiosbtnr1" value="option1" checked>
+ 
+  <label class="form-check-label" for="Radiosbtnr1">  Latest Approval Date </label>
+
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="return" id="Radiosbtnr2" value="option2">
+                                        <label class="form-check-label" for="Radiosbtnr2">
+  Oldest Approval Date
+  </label>
+ 
+</div>
+
 </form>
-        </div>
-    </div>
 </div>
 
+           </div>
+           <div class="col-9">
+                <form class="row row-cols-lg-auto g-3 align-items-center">
+            <div class="col-12">
+    
+    <div class="input-group d-flex align-items-center ">
+        <label class="form-label me-4" for="gridCheck">
+     Returned Approved
+      </label> 
+      <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="On and From/To">
+       
+       
+    </div>
+            </div>
+
+               </form>
+
+
+              <div class="user-products-list-wrapper">
+     <div class="user-products-list-inner-wrapper ">
+            <table>
+            <thead>
+                <tr >
+                   
+                    <td>
+                        Order  Details
+                    </td>
+                    <td>
+                       Qty & Price
+                    </td>
+                    <td>
+                       Return Detail
+                    </td>
+                    <td>
+                        Return Reason
+                    </td>
+                    <td>
+                        Tracking Details
+                    </td>
+                 
+                   
+                
+                </tr>
+            </thead>
+            <tbody>
+                
+              
+                  <tr>
+                   
+                    <td>
+                       <div class="listing-product-detail">
+                           <div class="listing-product-detail-image">
+                               <img src="./assets/images/pro.png" alt="">
+                           </div>
+                           <div class="listing-product-detail-text">
+                               
+                               
+                            <span> Men shirt</span>
+                            <h5>shirt SKU:223424</h5>
+                              
+
+                           </div>
+                       </div>
+                    </td>
+                    <td>
+                        <p>Qty: <span>32</span></p>
+                         <p>Price: <span>200</span></p>
+                    </td>
+                    <td>
+                       <p>Return ID: <span>32898</span></p>
+                         <p>Request Date: <span> 1-May-2020, 09:20AM</span></p>
+                          <p> Delivery Date:  <span>1-May-2020, 09:20AM</span></p>
+                           <p>Tracking ID: <span> 1245457845</span></p>
+                            <p>Return Type: <span> Customer Return</span></p>
+                             <p>Request Type: <span>  Refund</span></p>
+                             <p class="approve-color">Return Completed</p>
+                    </td>
+                    <td>
+                        <p>Customer Return Reason: </p>
+                        <span> Quality Issue</span>
+                    </td>
+                   <td>
+                        <p>Tracking ID:</p>
+                         <span>2245457854</span>
+                         <div class="d-flex justify-content-end">
+                             <a href="" class="btn bgc-brand-orange "> Claim SPF</a>
+                         </div>
+                    </td>
+                  
+                </tr>
+                   <tr>
+                   
+                    <td>
+                       <div class="listing-product-detail">
+                           <div class="listing-product-detail-image">
+                               <img src="./assets/images/pro.png" alt="">
+                           </div>
+                           <div class="listing-product-detail-text">
+                               
+                               
+                            <span> Men shirt</span>
+                            <h5>shirt SKU:3323424</h5>
+                              
+
+                           </div>
+                       </div>
+                    </td>
+                    <td>
+                        <p>Qty: <span>32</span></p>
+                         <p>Price: <span>200</span></p>
+                    </td>
+                    <td>
+                       <p>Return ID: <span>442898</span></p>
+                         <p>Request Date: <span> 1-May-2020, 09:20AM</span></p>
+                          <p> Delivery Date:  <span>1-May-2020, 09:20AM</span></p>
+                           <p>Tracking ID: <span> 1245457845</span></p>
+                            <p>Return Type: <span> Customer Return</span></p>
+                             <p>Request Type: <span>  Refund</span></p>
+                             <p class="approve-color">Return Completed</p>
+                    </td>
+                    <td>
+                        <p>Customer Return Reason: </p>
+                        <span> Quality Issue</span>
+                    </td>
+                   <td>
+                        <p>Tracking ID:</p>
+                         <span>3245457854</span>
+                         <div class="d-flex justify-content-end">
+                             <a href="" class="btn bgc-brand-orange "> Claim SPF</a>
+                         </div>
+                    </td>
+                  
+                </tr>
+                   <tr>
+                   
+                    <td>
+                       <div class="listing-product-detail">
+                           <div class="listing-product-detail-image">
+                               <img src="./assets/images/pro.png" alt="">
+                           </div>
+                           <div class="listing-product-detail-text">
+                               
+                               
+                            <span> Men shirt</span>
+                            <h5>shirt SKU:423424</h5>
+                              
+
+                           </div>
+                       </div>
+                    </td>
+                    <td>
+                        <p>Qty: <span>332</span></p>
+                         <p>Price: <span>2330</span></p>
+                    </td>
+                    <td>
+                       <p>Return ID: <span>132898</span></p>
+                         <p>Request Date: <span> 1-May-2020, 09:20AM</span></p>
+                          <p> Delivery Date:  <span>1-May-2020, 09:20AM</span></p>
+                           <p>Tracking ID: <span> 1245457845</span></p>
+                            <p>Return Type: <span> Customer Return</span></p>
+                             <p>Request Type: <span>  Refund</span></p>
+                             <p class="approve-color">Return Completed</p>
+                    </td>
+                    <td>
+                        <p>Customer Return Reason: </p>
+                        <span> Quality Issue</span>
+                    </td>
+                   <td>
+                        <p>Tracking ID:</p>
+                         <span>5245457854</span>
+                         <div class="d-flex justify-content-end">
+                             <a href="" class="btn bgc-brand-orange "> Claim SPF</a>
+                         </div>
+                    </td>
+                  
+                </tr>
+            </tbody>
+        </table>
+        </div>
+</div>
+           </div>
+       </div>
+   </div>
 
 
   </div>
-  <div class="tab-pane fade" id="completed" role="tabpanel" aria-labelledby="completed-tab">completed</div>
-  <div class="tab-pane fade" id="transit" role="tabpanel" aria-labelledby="transit-tab">transit</div>
+  <div class="tab-pane fade" id="pills-transit" role="tabpanel" aria-labelledby="pills-transit-tab">
+
+ <div class="return-content-menu-table">
+       <div class="row">
+           <div class="col-3">
+                 <form class="row row-cols-lg-auto g-3 align-items-center">
+            <div class="col-12">
+    
+    <div class="input-group">
+        
+      <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Search product">
+        <div class="button-icon-bottom-left">
+            <button type="submit" class="btn bgc-brand-orange text-white ">  <i class="bi bi-search px-3"></i>Submit</button>
+           
+        </div>
+       
+    </div>
+            </div>
+
+               </form>
+
+
+    <div class="return-filter-product margin-sect">
+    <h5>Physical Delivery</h5>
+   
+  <form class="row g-3">
+
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+      Expect
+      </label>
+    </div>
+  </div>
+   <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck1">
+      <label class="form-check-label" for="gridCheck1">
+        Don't Expect
+      </label>
+    </div>
+  </div>
+ 
+</form>
 </div>
+ <div class="return-filter-product mt-2">
+    <h5>Sort by</h5>
+   
+  <form class="row g-3">
+
+  <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="return" id="Radiosbtnr1" value="option1" checked>
+ 
+  <label class="form-check-label" for="Radiosbtnr1">  Latest Approval Date </label>
+
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="return" id="Radiosbtnr2" value="option2">
+                                        <label class="form-check-label" for="Radiosbtnr2">
+  Oldest Approval Date
+  </label>
+ 
+</div>
+
+</form>
+</div>
+
+           </div>
+           <div class="col-9">
+                <form class="row row-cols-lg-auto g-3 align-items-center">
+            <div class="col-12">
+    
+    <div class="input-group d-flex align-items-center ">
+        <label class="form-label me-4" for="gridCheck">
+     Returned Approved
+      </label> 
+      <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="On and From/To">
+       
+       
+    </div>
+            </div>
+
+               </form>
+
+
+              <div class="user-products-list-wrapper">
+     <div class="user-products-list-inner-wrapper ">
+            <table>
+            <thead>
+                <tr >
+                   
+                    <td>
+                        Order  Details
+                    </td>
+                    <td>
+                       Qty & Price
+                    </td>
+                    <td>
+                       Cancellation Type
+                    </td>
+                    <td>
+                       Buyer Detail
+                    </td>
+                   
+                 
+                   
+                
+                </tr>
+            </thead>
+            <tbody>
+                
+               
+                  <tr>
+                   
+                    <td>
+                       <div class="listing-product-detail">
+                           <div class="listing-product-detail-image">
+                               <img src="./assets/images/pro.png" alt="">
+                           </div>
+                           <div class="listing-product-detail-text">
+                               
+                               
+                            <span> Men shirt</span>
+                            <h5>shirt SKU:223424</h5>
+                              
+
+                           </div>
+                       </div>
+                    </td>
+                    <td>
+                        <p>Qty: <span>32</span></p>
+                         <p>Price: <span>200</span></p>
+                    </td>
+                    <td>
+                       <p>Type: <span>Cancellation by buyer</span></p>
+                        
+                    </td>
+                    <td>
+                        <p>Buyer: </p>
+                        <span> Murti Ramlingam</span>
+                    </td>
+                   
+                  
+                </tr>
+                   <tr>
+                   
+                    <td>
+                       <div class="listing-product-detail">
+                           <div class="listing-product-detail-image">
+                               <img src="./assets/images/pro.png" alt="">
+                           </div>
+                           <div class="listing-product-detail-text">
+                               
+                               
+                            <span> Men shirt</span>
+                            <h5>shirt SKU:223424</h5>
+                              
+
+                           </div>
+                       </div>
+                    </td>
+                    <td>
+                        <p>Qty: <span>32</span></p>
+                         <p>Price: <span>200</span></p>
+                    </td>
+                    <td>
+                       <p>Type: <span>Cancellation by buyer</span></p>
+                        
+                    </td>
+                    <td>
+                        <p>Buyer: </p>
+                        <span> Murti Ramlingam</span>
+                    </td>
+                   
+                  
+                </tr>
+                   <tr>
+                   
+                    <td>
+                       <div class="listing-product-detail">
+                           <div class="listing-product-detail-image">
+                               <img src="./assets/images/pro.png" alt="">
+                           </div>
+                           <div class="listing-product-detail-text">
+                               
+                               
+                            <span> Men shirt</span>
+                            <h5>shirt SKU:223424</h5>
+                              
+
+                           </div>
+                       </div>
+                    </td>
+                    <td>
+                        <p>Qty: <span>32</span></p>
+                         <p>Price: <span>200</span></p>
+                    </td>
+                    <td>
+                       <p>Type: <span>Cancellation by buyer</span></p>
+                        
+                    </td>
+                    <td>
+                        <p>Buyer: </p>
+                        <span> Murti Ramlingam</span>
+                    </td>
+                   
+                  
+                </tr>
+            </tbody>
+        </table>
+        </div>
+</div>
+           </div>
+       </div>
+   </div>
+
+
+  </div>
+</div>
+            </div>
         </div>
     </div>
 </div>
 
-    </div>
 
+
+
+
+
+
+
+
+
+
+   </div>
+  
 
 
 

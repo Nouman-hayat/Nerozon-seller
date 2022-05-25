@@ -1400,11 +1400,36 @@ width: 100%;
 /* pending handover */
 
 /* return policy */
+.order-returns-wrapper{
+     padding: 50px 0;
+     background-color: #E5E5E5;
+}.order-return-inner-wrapper .nav-tabs{
+    border: none;
+}.order-return-inner-wrapper .nav-tabs .nav-link {
+    color:#97A6B1;
+    outline: none;
+}
+.order-return-inner-wrapper .nav-tabs .nav-link.active{
+    color: black;
+    background-color: transparent;
+    border: unset ;
+    border-bottom: 2px solid #EC7C03;
+    outline: none;
+
+}
+
 .user-bottom-right .policy-bar-link{
     color: var(--brand-green);
     display: inline-block;
     margin: 10px 10px 0 0;
-}@media (max-width: 430.98px){
+}.return-filter-product{
+    padding: 20px;
+    background-color: white;
+}.return-filter-product h5{
+    font-size: 14px;
+    font-weight: 700;
+}
+@media (max-width: 430.98px){
 .user-bottom-right .policy-bar-link{
     display: block;
     width: 300px ;

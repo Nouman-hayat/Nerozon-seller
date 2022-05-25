@@ -12,7 +12,7 @@ $(document).ready(function () {
   // product description
 
   // add color
-  $("#add-color").click(function () {
+  $("#add-color-btn").click(function () {
     var html =
       '<div class="col-9 mt-2"><select class="form-select"><option selected>Select one</option><option value="1">One</option><option value="2">Two</option><option value="3">Three</option></select></div>';
     $("#add-color").append(html);

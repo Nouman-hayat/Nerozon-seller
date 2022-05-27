@@ -285,9 +285,9 @@
             <div class="col-2">
                 <div class="new-product-list-menu">
                     <ul class="list-group">
-  <li class="list-group-item "><a href="">Product Info</a> <i class="bi bi-check-lg "></i></li>
-  <li class="list-group-item "><a href="">Select Brand</a> <i class="bi bi-check-lg "></i></li>
-  <li class="list-group-item active-list"><a href="">Add Product info</a></li>
+  <li class="list-group-item "><a href="./addnewlist.html">Product Info</a> <i class="bi bi-check-lg "></i></li>
+  <li class="list-group-item "><a href="./selectbrand.html">Select Brand</a></li>
+  <li class="list-group-item active-list"><a href="./selectproductinfo.html">Add Product info</a></li>
   
 </ul>
                 </div>
@@ -312,7 +312,7 @@
     Price, stock & Shipping information (0/23)
 </h5>
 
-    <a href="" class="newlisting-selectproductinfo-edit"><i class="bi bi-box-arrow-up-right"></i> Edit</a>
+    <p  class="newlisting-selectproductinfo-edit" id="selling-info-popup"><i class="bi bi-box-arrow-up-right"></i> Edit</a>
 
 </div>
 <div class="row">
@@ -338,7 +338,7 @@
     Product Description  (0/14)
 </h5>
 
-    <a href="" class="newlisting-selectproductinfo-edit"><i class="bi bi-box-arrow-up-right"></i> Edit</a>
+    <p class="newlisting-selectproductinfo-edit" id="product-description-popup"><i class="bi bi-box-arrow-up-right"></i> Edit</p>
 
 </div>
 <div class="row">
@@ -364,7 +364,7 @@
     Additional Description (0/24)
 </h5>
 
-    <a href="" class="newlisting-selectproductinfo-edit"><i class="bi bi-box-arrow-up-right"></i> Edit</a>
+    <p class="newlisting-selectproductinfo-edit" id="additional-info-popup"><i class="bi bi-box-arrow-up-right"></i> Edit</p>
 
 </div>
 <div class="row">
@@ -400,6 +400,864 @@
     </div>
 
 </div>
+
+
+
+
+<!-- select product info popup -->
+<div class="newlisting-selectproductinfo-overlay-wrapper">
+<div class="newlisting-selectproductinfo-overlay-inner">
+    
+</div>
+
+<!-- overlay-select-product image -->
+   <div class="newlisting-selectproductinfo-overlay-content" id="selectproductinfo-product-image-wrappper">
+      <div class="newlisting-selectproductinfo-content-image">
+           <div class="card" >
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="./assets/images/prod-img.png" class="img-fluid " alt="...">
+      <div class="delete-icon">
+        <a href=""> <i class="bi bi-trash"></i></a>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+          <h4> Guidelines to Upload images</h4>
+        <h5 class="card-title"> Image Resolution</h5>
+        
+        <p class="card-text">Use clear color images with minimum resolution of 1000x1000 px.</p>
+       
+        <h5 class="card-title"> Image Guidelines</h5>
+         <p class="card-text">Upload authentic product photos taken in bright lighting.</p>
+         <h5 class="card-title"> Tips</h5>
+        
+        <p class="card-text">Drag images to the desired position to re-order the images
+Check out the sample images to ensure you provide the correct Image View.
+e.g. First Image has to be the Front View.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="newlisting-selectproductinfo-all-images my-3">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="newlisting-selectproductinfo-images-left">
+<div class="newlisting-selectproductinfo-images-left-inner">
+    <img src="./assets/images/prod-img.png" alt="">
+    <p>Front view*</p>
+</div>
+<div class="newlisting-selectproductinfo-images-left-inner">
+    <img src="./assets/images/side.png" alt="">
+    <p>Side view*</p>
+</div>
+<div class="newlisting-selectproductinfo-images-left-inner">
+    <img src="./assets/images/back.png" alt="">
+    <p>Back view *</p>
+</div>
+<div class="newlisting-selectproductinfo-images-left-inner">
+    <img src="./assets/images/zoom.png" alt="">
+    <p>Zoomed*</p>
+</div>
+            </div>
+        </div>
+         <div class="col-md-6">
+            <div class="newlisting-selectproductinfo-images-left">
+<div class="newlisting-selectproductinfo-images-left-inner">
+    <img src="./assets/images/closeup.png" alt="">
+    <p>Close up </p>
+</div>
+<div class="newlisting-selectproductinfo-images-left-inner-wrapper">
+    <div class="newlisting-selectproductinfo-images-left-inner">
+        <img src="./assets/images/prod-img.png" alt="">
+       
+         <div class="newlisting-selectproductinfo-images-left-overlay">
+      <i class="bi bi-camera-video-fill"></i>
+    </div>
+     
+    </div>
+   <p>Video</p>
+</div>
+<div class="newlisting-selectproductinfo-images-left-inner">
+    <img src="./assets/images/back.png" alt="">
+    <p>More</p>
+</div>
+<div class="newlisting-selectproductinfo-images-left-inner">
+    <img src="./assets/images/zoom.png" alt="">
+    <p>Other</p>
+</div>
+            </div>
+        </div>
+    </div>
+       <div class="newlist-selectproduct-info-btn justify-content-end">
+            <h6 href="" id="selectproductinfo-image-close-popup" class="btn">Cancel</h6>
+            <button href="" class="btn bgc-brand-orange">Save</button>
+        </div>
+</div>
+      </div>
+    </div>
+    <!-- overlay-select-product image --> 
+
+
+    <!-- overlay selling info popup -->
+
+    <div class="newlisting-selectproductinfo-overlay-content" id="selectproductinfo-product-selling-info-wrappper">
+          <div class="newlisting-selectproductinfo-selling-info-wrapper">
+    <h4>Selling information</h4>
+    <div class="row">
+        <div class="col-md-6">
+           <div class="selling-info">
+    <h5>
+        Listing information
+    </h5>
+    <div class="mb-3">
+      <label for="exampleFormControlInput11" class="form-label">  Listing information</label>
+      <input type="text" class="form-control" id="exampleFormControlInput11" >
+    </div>
+    <h5>
+       Status information
+    </h5>
+    <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label"> Listing   Status 
+    </label>
+      <input type="text" class="form-control" id="exampleFormControlInput12" >
+    </div>
+    <h5>
+        Price Details
+    </h5>
+    <div class="mb-3">
+      <label for="exampleFormControlInput13" class="form-label">  MRP</label>
+      <input type="number" class="form-control" id="exampleFormControlInput13" >
+    </div>
+    
+    <div class="mb-3">
+      <label for="exampleFormControlInput14" class="form-label"> Your selling price</label>
+      <input type="number" class="form-control" id="exampleFormControlInput14" >
+    </div>
+    <h5>
+       Inventory Details
+    </h5>
+    <div class="mb-3">
+      <label for="exampleFormControlInput15" class="form-label">   Procureument type</label>
+      <input type="text" class="form-control" id="exampleFormControlInput15" >
+    </div>
+    
+    <div class="mb-3">
+      <label for="exampleFormControlInput16" class="form-label"> Procureument SLA</label>
+      <input type="text" class="form-control" id="exampleFormControlInput16" required>
+    </div>
+   
+    <div class="mb-3">
+      <label for="exampleFormControlInput17" class="form-label">  Stock</label>
+      <input type="number" class="form-control" id="exampleFormControlInput17" >
+    </div>
+    
+    <div class="mb-3">
+      <label for="exampleFormControlInput18" class="form-label">  Stock available for buyer</label>
+      <input type="number" class="form-control" id="exampleFormControlInput18" >
+    </div>
+     
+           </div> 
+        </div>
+         <div class="col-md-6">
+           <div class="selling-info">
+    <h5>
+       Packaging Details
+    </h5>
+    <div class="mb-3">
+      <label for="exampleFormControlInput11" class="form-label">  Package weight</label>
+      <input type="number" class="form-control" id="exampleFormControlInput11" required>
+    </div>
+   <div class="mb-3">
+      <label for="exampleFormControlInput11" class="form-label">  Package breadth</label>
+      <input type="number" class="form-control" id="exampleFormControlInput11" required>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput11" class="form-label">  Package length</label>
+      <input type="number" class="form-control" id="exampleFormControlInput11" required >
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput11" class="form-label">  Package height</label>
+      <input type="number" class="form-control" id="exampleFormControlInput11" required>
+    </div>
+    <h5>
+        Manufacture Details
+    </h5>
+    <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label"> Manufacture Details
+    </label>
+      <input type="text" class="form-control" id="exampleFormControlInput12" >
+    </div>
+    
+    <div class="mb-3">
+      <label for="exampleFormControlInput13" class="form-label"> Importer Details</label>
+      <input type="text" class="form-control" id="exampleFormControlInput13" >
+    </div>
+    
+  
+    <div class="mb-3">
+      <label for="exampleFormControlInput15" class="form-label"> Packer Details</label>
+      <input type="text" class="form-control" id="exampleFormControlInput15" >
+    </div>
+    
+    <div class="mb-3">
+      <label for="exampleFormControlInput16" class="form-label"> Country Origin</label>
+      <input type="text" class="form-control" id="exampleFormControlInput16" required>
+    </div>
+   
+   
+     
+           </div> 
+        </div>
+    </div>
+     <div class="newlist-selectproduct-info-btn mt-4">
+            <h6  class="btn" id="product-selling-close-popup">Cancel</h6>
+            <button  class="btn bgc-brand-orange">Save</button>
+        </div>
+          </div>
+        </div>
+
+          <!-- overlay selling info popup -->
+
+
+
+          <!-- overlay-description-popup -->
+
+             <div class="newlisting-selectproductinfo-overlay-content" id="selectproductinfo-product-description-wrappper">
+          <div class="newlisting-selectproductinfo-selling-info-wrapper">
+    <h4>Product description</h4>
+    <div class="row">
+        <div class="col-md-6">
+           <div class="selling-info">
+  
+    <div class="mb-3">
+    
+      <label for="exampleFormControlInput11" class="form-label">  Size</label>
+      <div class="row">
+         
+          <div class="col-md-7 ">
+                
+              <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+          </div>
+          <div class="col-md-5 ">
+              <select class="form-select" aria-label="Default select example" required>
+  <option selected>Regular</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+          </div>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput15" class="form-label">   Color code</label>
+      <input type="text" class="form-control" id="exampleFormControlInput15" required>
+    </div>
+   
+     <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label">Brand Fabric
+    </label>
+      <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+     <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label"> Reversible
+    </label>
+      <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+       <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label"> Ideal for
+    </label>
+      <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+       <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label"> Sleeve
+    </label>
+      <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+       <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label"> Occasion
+    </label>
+      <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+       <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label">Pattern
+    </label>
+      <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+    
+     
+           </div> 
+        </div>
+         <div class="col-md-6">
+           <div class="selling-info">
+      <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label"> Colors
+    </label>
+      <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+     <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label"> Brand color
+    </label>
+     
+<div class="row" id="add-color">
+    <div class="col-9">
+ <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+      <div class="col-3">
+        <div class="d-flex justify-content-end">
+            <button class="btn  btn-plus" id="add-color-btn">+</button>
+        </div>
+    </div>
+    
+</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput11" class="form-label">  Pick of</label>
+      <input type="text" class="form-control" id="exampleFormControlInput11" required >
+    </div>
+       <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label"> Fabric care
+    </label>
+   
+<div class="row" id="fabr">
+    <div class="col-9">
+ <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+      <div class="col-3">
+        <div class="d-flex justify-content-end">
+            <button class="btn  btn-plus" id="fabr-btn">+</button>
+        </div>
+    </div>
+    
+</div>
+    </div>
+       <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label"> Fit
+    </label>
+  <div class="row" id="fit">
+    <div class="col-9">
+ <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+     <div class="col-3">
+        <div class="d-flex justify-content-end">
+            <button class="btn  btn-plus" id="fit-btn">+</button>
+        </div>
+    </div>
+</div>
+    </div>
+       <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label"> suitable for
+    </label>
+      <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+       <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label"> Shirt Length
+    </label>
+      <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+   
+     
+           </div> 
+        </div>
+    </div>
+     <div class="newlist-selectproduct-info-btn mt-4">
+            <h6 id="product-description-close-popup" href="" class="btn">Cancel</h6>
+            <button class="btn bgc-brand-orange">Save</button>
+        </div>
+          </div>
+        </div>
+        <!-- overlay-description-popup -->
+
+
+        <!-- overlay-additional-popup -->
+          <div class="newlisting-selectproductinfo-overlay-content" id="selectproductinfo-product-additional-wrapper">
+          <div class="newlisting-selectproductinfo-selling-info-wrapper">
+    <h4>Additional information</h4>
+    <div class="row">
+        <div class="col-md-6">
+           <div class="selling-info">
+  
+    <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label"> Brand fit
+    </label>
+      <input type="text" class="form-control" id="exampleFormControlInput12" >
+    </div>
+     <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label">Collar
+    </label>
+      <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+    <div class="mb-3">
+    
+      <label for="exampleFormControlInput11" class="form-label"> ornamentation type</label>
+    <div class="row" id="ornamentation">
+    <div class="col-9">
+ <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+   <div class="col-3">
+        <div class="d-flex justify-content-end">
+            <button class="btn  btn-plus" id="ornamentation-btn">+</button>
+        </div>
+    </div>
+</div>
+    </div>
+     <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label">Surface styling
+    </label>
+      <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+     <h5>
+     General
+    </h5>
+    <div class="mb-3">
+      <label for="exampleFormControlInput15" class="form-label">   Model Name</label>
+      <input type="text" class="form-control" id="exampleFormControlInput15" required>
+    </div>
+     <div class="mb-3">
+    
+      <label for="exampleFormControlInput11" class="form-label">EAN/UPC</label>
+    <div class="row" id="ean-upc">
+    <div class="col-9">
+ <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+    <div class="col-3">
+        <div class="d-flex justify-content-end">
+            <button class="btn  btn-plus" id="ean-upc-btn">+</button>
+        </div>
+    </div>
+</div>
+    </div>
+    
+     <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label"> Fashion core
+    </label>
+      <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+      <div class="mb-3">
+    
+      <label for="exampleFormControlInput11" class="form-label"> Season</label>
+    <div class="row" id="season">
+    <div class="col-9">
+ <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+   <div class="col-3">
+        <div class="d-flex justify-content-end">
+            <button class="btn  btn-plus" id="season-btn">+</button>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label"> Description
+    </label>
+      <textarea type="text" class="form-control" rows="4" id="exampleFormControlInput12" ></textarea>
+    </div>
+     
+   
+      <div class="mb-3">
+    
+      <label for="exampleFormControlInput11" class="form-label"> Search Keyword</label>
+    <div class="row" id="search-keyword">
+    <div class="col-9" >
+ <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+   <div class="col-3">
+        <div class="d-flex justify-content-end">
+            <button class="btn  btn-plus" id="search-keyword-btn">+</button>
+        </div>
+    </div>
+</div>
+    </div>
+       <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label"> Video URL
+    </label>
+      <input type="text" class="form-control" id="exampleFormControlInput12" >
+    </div>
+      <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label"> External identifier
+    </label>
+      <input type="text" class="form-control" id="exampleFormControlInput12" >
+    </div>
+      <div class="mb-3">
+    
+      <label for="exampleFormControlInput11" class="form-label"> Trend</label>
+    <div class="row" id="trend">
+    <div class="col-9">
+ <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+   <div class="col-3">
+        <div class="d-flex justify-content-end">
+            <button class="btn  btn-plus" id="trend-btn">+</button>
+        </div>
+    </div>
+</div>
+    </div>
+      <div class="mb-3">
+    
+      <label for="exampleFormControlInput11" class="form-label"> Pattern / print type</label>
+    <div class="row" id="pattern">
+    <div class="col-9">
+ <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+   <div class="col-3">
+        <div class="d-flex justify-content-end">
+            <button class="btn  btn-plus" id="pattern-btn">+</button>
+        </div>
+    </div>
+</div>
+    </div>
+        <div class="mb-3">
+    
+      <label for="exampleFormControlInput11" class="form-label"> Secondary color</label>
+    <div class="row" id="secondary-color">
+    <div class="col-9">
+ <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+    <div class="col-3">
+        <div class="d-flex justify-content-end">
+            <button class="btn  btn-plus" id="secondary-color-btn">+</button>
+        </div>
+    </div>
+</div>
+    </div>
+
+           </div> 
+        </div>
+         <div class="col-md-6">
+           <div class="selling-info">
+                   <div class="mb-3">
+    
+      <label for="exampleFormControlInput11" class="form-label"> Trend AW16</label>
+    <div class="row" id="aw16">
+    <div class="col-9">
+ <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+    <div class="col-3">
+        <div class="d-flex justify-content-end">
+            <button class="btn  btn-plus" id="aw16-btn">+</button>
+        </div>
+    </div>
+</div>
+    </div>
+     <h5>
+     Shirts Details
+    </h5>
+     <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label">Hemline
+    </label>
+      <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+    <div class="mb-3">
+    
+      <label for="exampleFormControlInput11" class="form-label"> closure</label>
+    <div class="row" id="closure">
+    <div class="col-9">
+ <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+    <div class="col-3">
+        <div class="d-flex justify-content-end">
+            <button class="btn  btn-plus" id="closure-btn">+</button>
+        </div>
+    </div>
+</div>
+    </div>
+    <h5>
+     Dimension
+    </h5>
+    <div class="mb-3">
+    
+      <label for="exampleFormControlInput11" class="form-label"> Other Dimension</label>
+    <div class="row" id="other-dimension">
+    <div class="col-9">
+ <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+    <div class="col-3">
+        <div class="d-flex justify-content-end">
+            <button class="btn  btn-plus" id="other-dimension-btn">+</button>
+        </div>
+    </div>
+</div>
+    </div>
+    <h5>
+     Additional Details
+    </h5>
+    <div class="mb-3">
+    
+      <label for="exampleFormControlInput11" class="form-label">Other Details</label>
+    <div class="row" id="other-detail">
+    <div class="col-9">
+ <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+   <div class="col-3">
+        <div class="d-flex justify-content-end">
+            <button class="btn  btn-plus" id="other-detail-btn">+</button>
+        </div>
+    </div>
+</div>
+    </div>
+       <h5>
+     In the box
+    </h5>
+    <div class="mb-3">
+    
+      <label for="exampleFormControlInput11" class="form-label"> Sale package</label>
+    <div class="row" id="sale-package">
+    <div class="col-9">
+ <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+    <div class="col-3">
+        <div class="d-flex justify-content-end">
+            <button class="btn  btn-plus" id="sale-package-btn">+</button>
+        </div>
+    </div>
+</div>
+    </div>
+       <h5>
+    Warranty
+    </h5>
+    <div class="mb-3">
+    
+      <label for="exampleFormControlInput11" class="form-label">Domestic Warranty</label>
+    <div class="row" id="domestic-warranty">
+    <div class="col-9">
+ <select class="form-select" aria-label="Default select example" required>
+  <option selected>Select one</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+   <div class="col-3">
+        <div class="d-flex justify-content-end">
+            <button class="btn  btn-plus" id="domestic-warranty-btn">+</button>
+        </div>
+    </div>
+</div>
+    </div>
+     <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label"> International Warranty
+    </label>
+      <input type="text" class="form-control" id="exampleFormControlInput12" >
+    </div>
+    <div class="mb-3">
+    
+      <label for="exampleFormControlInput11" class="form-label">Warranty Summer</label>
+    <div class="row">
+    <div class="col-7">
+ <input type="text" class="form-control" id="exampleFormControlInput12" >
+    </div>
+    <div class="col-5">
+      
+         <select class="form-select" aria-label="Default select example" required>
+  <option selected>Years</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+</div>
+    </div>
+      <div class="mb-3">
+    
+      <label for="exampleFormControlInput11" class="form-label">Warranty Service type</label>
+    <div class="row">
+    <div class="col-7">
+ <input type="text" class="form-control" id="exampleFormControlInput12" >
+    </div>
+    <div class="col-5">
+      
+         <select class="form-select" aria-label="Default select example" required>
+  <option selected>Years</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label"> Covered in Warranty
+    </label>
+      <input type="text" class="form-control" id="exampleFormControlInput12" >
+    </div>
+    <div class="mb-3">
+   
+    <label for="exampleFormControlInput12" class="form-label">Not Covered in Warranty
+    </label>
+      <input type="text" class="form-control" id="exampleFormControlInput12" >
+    </div>
+    <h5>
+   Default attributes
+    </h5>
+    <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label"> Size for inwarding
+    </label>
+      <input type="text" class="form-control" id="exampleFormControlInput12" >
+    </div>
+  
+
+      
+   
+     
+           </div> 
+        </div>
+    </div>
+     <div class="newlist-selectproduct-info-btn mt-4">
+            <h6  class="btn" id="product-additional-close-popup">Cancel</h6>
+            <button  class="btn bgc-brand-orange">Save</button>
+        </div>
+          </div>
+        </div>
+        <!-- product-additional-popup -->
+</div>
+<!-- select product info popup -->
+
+
 
 </div>
 

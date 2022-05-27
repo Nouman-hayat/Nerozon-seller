@@ -199,15 +199,55 @@ $(document).ready(function () {
 
   // return ticket page
   $(".claimed-btn").click(closereturnticketpopup);
-   $(".return-close-btn").click(closereturnticketpopup);
+  $(".return-close-btn").click(closereturnticketpopup);
   $(".return-ticket-overlay-inner").click(closereturnticketpopup);
   function closereturnticketpopup() {
-     $(
-       ".return-ticket-overlay-content-wrapper , .return-ticket-overlay-inner"
+    $(
+      ".return-ticket-overlay-content-wrapper , .return-ticket-overlay-inner"
     ).toggle();
-    $(window).scrollTop(0)
+    $(window).scrollTop(0);
   }
   // return ticket page
+
+  // selectproduct info popup
+  $("#newlisting-selectproductinfo-image-wrapper").click(productimagepopup);
+   $("#selectproductinfo-image-close-popup").click(productimagepopup);
+  function productimagepopup() {
+    $(
+      ".newlisting-selectproductinfo-overlay-inner,#selectproductinfo-product-image-wrappper"
+    ).toggle();
+    $(window).scrollTop(0);
+  }
+
+
+    $("#selling-info-popup").click(productsellingpopup);
+    $("#product-selling-close-popup").click(productsellingpopup);
+    function productsellingpopup() {
+      $(
+        ".newlisting-selectproductinfo-overlay-inner, #selectproductinfo-product-selling-info-wrappper"
+      ).toggle();
+      $(window).scrollTop(0);
+  }
+
+   $("#product-description-popup").click(productdescriptionpopup);
+   $("#product-description-close-popup").click(productdescriptionpopup);
+   function productdescriptionpopup() {
+     $(
+       ".newlisting-selectproductinfo-overlay-inner, #selectproductinfo-product-description-wrappper"
+     ).toggle();
+     $(window).scrollTop(0);
+   }
+
+$("#additional-info-popup").click(productadditionalpopup);
+$("#product-additional-close-popup").click(productadditionalpopup);
+function productadditionalpopup() {
+  $(
+    ".newlisting-selectproductinfo-overlay-inner, #selectproductinfo-product-additional-wrapper"
+  ).toggle();
+  $(window).scrollTop(0);
+}
+
+  // selectproduct info popup
 });
 
 

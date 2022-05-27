@@ -51,7 +51,10 @@ max-width: 1300px;
 }.user-header-wrapper .user-profile-nav {
     display: flex;
     align-items: center;
-}.user-header-wrapper .user-profile-nav-inner p{
+}.user-header-wrapper .navbar-brand img{
+    width: 180px;
+}
+.user-header-wrapper .user-profile-nav-inner p{
     font-size: 15px;
     font-weight: 500;
     color: white;
@@ -1573,3 +1576,54 @@ width: 100%;
 }
 }
 /* return-ticket */
+
+/* my account setting */
+#my-account-setting-wrapper{
+ padding: 30px 0 90px 0;
+     background-color: #E5E5E5;
+}.my-account-setting-content-wrapper{
+    background-color: white;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}.my-account-setting-left p{
+    font-size: 13px;
+}.my-account-setting-right .bi-chevron-right{
+    font-size: 25px; 
+    color: var(--brand-green);
+}@media (max-width: 575.98px){
+    .my-account-setting-left p{
+   width: 70vw;
+}
+}
+/* my account setting */
+/* my account setting menu */
+.my-account-setting-menu-content-wrapper{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}#my-account-setting-menu-wrapper{
+ padding: 30px 0 90px 0;
+     background-color: #E5E5E5;
+}#my-account-setting-menu-wrapper .my-account-setting-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#my-account-setting-menu-wrapper .my-account-setting-header p{
+    color: blue;
+    font-size: 14px;
+    cursor: pointer;
+}
+/* my account setting menu */

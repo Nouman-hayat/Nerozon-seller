@@ -246,8 +246,81 @@ function productadditionalpopup() {
   ).toggle();
   $(window).scrollTop(0);
 }
+$("#account-info-popup").click(accountsettinginfopopup);
+$("#account-info-close-popup , .account-x-btn").click(accountsettinginfopopup);
+function accountsettinginfopopup() {
+  $(
+    ".account-setting-menu-overlay-inner, #account-info-popup-wrapper"
+  ).toggle();
+  $(window).scrollTop(0);
+}
+$("#contact-info-popup").click(contactsettinginfopopup);
+$("#contact-info-close-popup ,  .contact-x-btn").click(contactsettinginfopopup);
+function contactsettinginfopopup() {
+  $(
+    ".account-setting-menu-overlay-inner, #contact-info-popup-wrapper"
+  ).toggle();
+  $(window).scrollTop(0);
+}
+ 
 
-  // selectproduct info popup
+$("#password-info-popup").click(passwordsettinginfopopup);
+$("#password-info-close-popup , .pass-x-btn").click(
+  passwordsettinginfopopup
+);
+function passwordsettinginfopopup() {
+  $(
+    ".account-setting-menu-overlay-inner, #password-info-popup-wrapper"
+  ).toggle();
+  $(window).scrollTop(0);
+}
+
+
+$("#business-info-popup").click(businesssettinginfopopup);
+$("#business-info-close-popup , .business-x-btn").click(
+  businesssettinginfopopup
+);
+function businesssettinginfopopup() {
+  $(
+    ".account-setting-menu-overlay-inner, #business-info-popup-wrapper"
+  ).toggle();
+  $(window).scrollTop(0);
+}
+
+  
+  $("#bank-info-popup").click(businesssettinginfopopup);
+  $("#bank-info-close-popup , .bank-x-btn").click(
+    businesssettinginfopopup
+  );
+  function businesssettinginfopopup() {
+    $(
+      ".account-setting-menu-overlay-inner, #bank-info-popup-wrapper"
+    ).toggle();
+    $(window).scrollTop(0);
+  }
+
+
+   $("#working-info-popup").click(workingsettinginfopopup);
+   $("#working-info-close-popup , .working-x-btn").click(
+     workingsettinginfopopup
+   );
+   function workingsettinginfopopup() {
+     $(
+       ".account-setting-menu-overlay-inner, #working-info-popup-wrapper"
+     ).toggle();
+     $(window).scrollTop(0);
+   }
+  
+
+    $("#leave-info-popup").click(leavesettinginfopopup);
+    $("#leave-info-close-popup , .leave-x-btn").click(leavesettinginfopopup);
+    function leavesettinginfopopup() {
+      $(
+        ".account-setting-menu-overlay-inner, #leave-info-popup-wrapper"
+      ).toggle();
+      $(window).scrollTop(0);
+    }
+    // account setting popup
 });
 
 

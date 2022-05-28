@@ -149,7 +149,7 @@
         <div id="user-sidebar-menu-wrapper">
    <div class="user-sidebar-menu-inner">
         <div class="d-flex flex-column flex-shrink-0 p-3 " >
-           <a class="navbar-brand" href="#"><img src="./assets/images/brand-logo.png" alt=""></a>
+            <a class="navbar-brand" href="#"><img src="./assets/images/seller-logo.png" alt=""></a>
             <div id="close-icon-sidebar">
         <i class="bi bi-x-lg"></i>
     </div>
@@ -280,25 +280,288 @@
 <div id="my-account-setting-menu-wrapper">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-              <div class="my-account-setting-menu-content-wrapper">
+            <div class="col-lg-5">
+                <div class="row">
+                <div class="col-md-12 my-1">
+  <div class="my-account-setting-menu-content-wrapper">
                    <div class="my-account-setting-header">
                        <h5>
                            Account
                        </h5>
-                        <p><i class="bi bi-box-arrow-up-right"></i> Edit</p>
+                        <p id="account-info-popup"><i class="bi bi-box-arrow-up-right" ></i> Edit</p>
                    </div>
-                  
+                  <div class="row">
+                      <div class="col-sm-6">
+                          <div class="account-setting-single-site">
+                              <p>Account</p>
+                              <span>Shubham Gone</span>
+                          </div>
+                      </div>
+                       <div class="col-sm-6">
+                          <div class="account-setting-single-site">
+                              <p>Business Description</p>
+                              <span>Clothing, Mobile, Jewellery</span>
+                          </div>
+                      </div>
+                  </div>
+               </div>
+                </div>
+                  <div class="col-md-12 my-1">
+              <div class="my-account-setting-menu-content-wrapper">
+                   <div class="my-account-setting-header">
+                       <h5>
+                        Contact Details
+                       </h5>
+                        <p id="contact-info-popup"><i class="bi bi-box-arrow-up-right" ></i> Edit</p>
+                   </div>
+                  <div class="row">
+                      <div class="col-sm-6">
+                          <div class="account-setting-single-site">
+                              <p>Display Name</p>
+                              <span>Shubham Gone</span>
+                          </div>
+                      </div>
+                       <div class="col-sm-6">
+                          <div class="account-setting-single-site">
+                              <p>Mobile Number</p>
+                              <span>+91 7507298552</span>
+                          </div>
+                      </div>
+                       <div class="col-sm-6">
+                          <div class="account-setting-single-site">
+                              <p>Email ID</p>
+                              <span>shubham@gmail.com</span>
+                          </div>
+                      </div>
+                       <div class="col-sm-6">
+                          <div class="account-setting-single-site">
+                              <p>Prefered Time Slot to call</p>
+                              <span>10:00 to 18:00</span>
+                          </div>
+                      </div>
+                       <div class="col-sm-6">
+                          <div class="account-setting-single-site">
+                              <p>Preferred Language</p>
+                              <span>Hindi</span>
+                          </div>
+                      </div>
+                  </div>
                </div> 
             </div>
+            </div>
+             
+            </div>
+            <div class="col-lg-7">
+                <div class="row">
+                <div class="col-md-6 my-1">
+   <div class="my-account-setting-menu-content-wrapper">
+                   <div class="my-account-setting-header">
+                       <h5>
+                          Pickup Details
+                       </h5>
+                       
+                   </div>
+                  <div class="row">
+                      <div class="col-12">
+                          <div class="account-setting-single-site">
+                              <p>Address Line 1</p>
+                              <span>Manchar Shivaji Chowk</span>
+                          </div>
+                      </div>
+                       <div class="col-12">
+                          <div class="account-setting-single-site">
+                              <p>PIN Code</p>
+                              <span>410504</span>
+                          </div>
+                      </div> <div class="col-12">
+                          <div class="account-setting-single-site">
+                              <p>Pickup City</p>
+                              <span>Pune</span>
+                          </div>
+                      </div>
+                  </div>
+               </div>
+                </div>
+                 <div class="col-md-6 my-1">
+   <div class="my-account-setting-menu-content-wrapper">
+                   <div class="my-account-setting-header">
+                       <h5>
+                       Login Detaills
+                       </h5>
+                        <p id="password-info-popup"> Change password</p>
+                   </div>
+                  <div class="row">
+                      <div class="col-12">
+                          <div class="account-setting-single-site">
+                              <p>Display Name</p>
+                              <span>Shubham Gone</span>
+                          </div>
+                      </div>
+                       <div class="col-12">
+                          <div class="account-setting-single-site">
+                              <p>Mobile Number</p>
+                              <span>+91 7507298552</span>
+                          </div>
+                      </div> <div class="col-12">
+                          <div class="account-setting-single-site">
+                              <p>Email ID</p>
+                              <span>shubham@gmail.com</span>
+                          </div>
+                      </div>
+                  </div>
+               </div>
+                </div>
+                  
+            </div>
+             
+            </div>
+              
            
         </div>
     </div>
 </div>
 
+
+
+<!-- account setting popup -->
+<div class="account-setting-menu-overlay-wrapper">
+<div class="account-setting-menu-overlay-inner">
+    
 </div>
 
+<!-- account-info -->
+   <div class="account-setting-menu-overlay-content" id="account-info-popup-wrapper" >
+      <div class="account-setting-menu-overlay-content-inner">
+          <h4>Account info</h4>
+         
+    <div class="mb-3">
+      <label  class="form-label">  Account</label>
+      <input type="text" class="form-control" id="exampleFormControlInput11" >
+    </div>
+   
+    <div class="mb-3">
+      <label class="form-label"> Business Description 
+    </label>
+      <textarea name="" class="form-control" id=""rows="5"></textarea>
+    </div>
+    <h5>Preview</h5>
+    <label for="exampleFormControlInput12" class="form-label"> This is how your display name will be visible to buyer 
+    </label>
+    <div class="account-setting-menu-overlay-image-preview">
+        <img src="./assets/images/prev.png" alt="">
+    </div>
+       <div class="newlist-selectproduct-info-btn mt-4">
+            <h6  class="btn" id="account-info-close-popup" >Cancel</h6>
+            <button type="submit" class="btn bgc-brand-orange">Save</button>
+        </div>
+         <div class="return-close-btn account-x-btn"><i class="bi bi-x-lg"></i></div>
+      </div>
+    </div>
+    <!-- account-info --> 
+
+
+    <!-- contact-info image -->
+   <div class="account-setting-menu-overlay-content" id="contact-info-popup-wrapper" >
+      <div class="account-setting-menu-overlay-content-inner">
+          <h4>Contact info</h4>
+
+          <p>All business related communication, transactional information and support update will be sent to this contact addresses.</p>
+         
+    <div class="mb-3">
+      <label  class="form-label">  Display Name</label>
+      <input type="text" class="form-control" id="exampleFormControlInput11" >
+    </div>
+
+                  <div class="mb-3">
+       
+                                    <div class="form-input">
+                                          <label for="exampleFormControlInput15" class="form-label"> Callback Number</label>
+                                       <div class="form-number-input">
+                                            <input type="tel" class="form-control form-number" placeholder="Enter Mobile Number" maxlength="10" required>
+                                            <label for="" class="form-inner-code">+91 | </label>
+                                       </div>
+                                    </div>          
+    </div>
+    <div class="mb-3">
+      <label  class="form-label"> Email ID</label>
+      <input type="text" class="form-control" id="exampleFormControlInput11" >
+    </div>
+    <p>Please select your preferred time slot and language for a call from our representative.</p>
+     <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label"> Preferred Time Slot to call
+    </label>
+      <select class="form-select" aria-label="Default select example" required>
+  <option selected>10:00</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+      <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label"> To
+    </label>
+      <select class="form-select" aria-label="Default select example" required>
+  <option selected>08:00</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+      <div class="mb-3">
+      <label for="exampleFormControlInput12" class="form-label"> Preferred Language
+    </label>
+      <select class="form-select" aria-label="Default select example" required>
+  <option selected>Hindi</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+    </div>
+       <div class="newlist-selectproduct-info-btn mt-4">
+            <h6  class="btn" id="contact-info-close-popup" >Cancel</h6>
+            <button type="submit" class="btn bgc-brand-orange">Save</button>
+        </div>
+         <div class="return-close-btn contact-x-btn"><i class="bi bi-x-lg"></i></div>
+    </div>
+      </div>
+    </div>
+    <!--password-info-popup --> 
+<div class="account-setting-menu-overlay-content" id="password-info-popup-wrapper" >
+      <div class="account-setting-menu-overlay-content-inner">
+            <h4>Change Password</h4>
+         
+    <div class="form-group mt-3">
+    <label for="" class="popup-form-label">Old Password</label>
+    <input type="password" class="form-control popup-form-input" placeholder="Enter Old Password" required>
+  
+  </div>
+  <div class="form-group mt-3">
+    <label for="" class="popup-form-label">New Password</label>
+    <input type="password" class="form-control popup-form-input" placeholder="Enter New Password" required>
+  
+  </div>
+  <div class="form-group mt-3">
+    <label for="" class="popup-form-label">Confirm Password</label>
+    <input type="password" class="form-control popup-form-input" placeholder="Confirm Password" required>
+  
+  </div>
+  
+   <div class="newlist-selectproduct-info-btn mt-4">
+            <h6  class="btn" id="password-info-close-popup" >Cancel</h6>
+            <button type="submit" class="btn bgc-brand-orange">Save</button>
+        </div>
+ <div class="return-close-btn pass-x-btn"><i class="bi bi-x-lg"></i></div>
+      </div>
+    </div>
+
+<!-- account setting popup -->
+
+
+
 </div>
+
+
+
 
 
     <!--bootstrap js  -->

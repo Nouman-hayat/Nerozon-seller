@@ -127,6 +127,8 @@ display: block;
 }#user-sidebar-menu-wrapper .navbar-brand{
 display: flex;
 justify-content: center;
+}.navbar-brand img{
+    width: 180px;
 }
 .siderbar-collapse-menu{
     list-style: none;
@@ -962,7 +964,7 @@ font-size: 13px;
 
 /* select product info image */
 
-.newlisting-selectproductinfo-overlay-inner ,.return-ticket-overlay-inner{
+.newlisting-selectproductinfo-overlay-inner ,.return-ticket-overlay-inner, .account-setting-menu-overlay-inner{
      position: fixed;
     width: 100%;
     height: 100%;
@@ -971,7 +973,7 @@ font-size: 13px;
     opacity: 0.8;
     z-index: 99;
    
-}.newlisting-selectproductinfo-overlay-inner{
+}.newlisting-selectproductinfo-overlay-inner ,.account-setting-menu-overlay-inner{
     display: none;
 }
 
@@ -1620,10 +1622,184 @@ width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 #my-account-setting-menu-wrapper .my-account-setting-header p{
     color: blue;
-    font-size: 14px;
+    font-size: 12px;
     cursor: pointer;
+    margin: 0;
+}#my-account-setting-menu-wrapper .my-account-setting-header h5{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+}
+.account-setting-single-site{
+    margin: 10px 0;
+}
+.account-setting-single-site p{
+    font-size: 14px;
+    margin-bottom:0px;
+    color: #4C6C8D;
+}.account-setting-single-site span{
+    font-size: 14px;
+    color: #4C6C8D;
+    font-weight: 500;
 }
 /* my account setting menu */
+
+
+/* my account setting -menu popup */
+
+.account-setting-menu-overlay-content {
+    position:absolute;
+    width: 35%;
+    padding: 30px;
+    opacity: unset;
+    top:5%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    background-color: white;
+    z-index: 9999;
+    -webkit-transform: translate(-50%,0%);
+    -moz-transform: translate(-50%,0%);
+    -ms-transform: translate(-50%,0%);
+    -o-transform: translate(-50%,0%);
+   display: none;
+}
+.account-setting-menu-overlay-image-preview{
+    width: 100%;
+}.account-setting-menu-overlay-image-preview img{
+    width: 100%;
+}.account-setting-menu-overlay-content-inner h4{
+    text-align: center;
+    color: var(--brand-orange);
+    margin-bottom: 50px;
+}.account-setting-menu-overlay-content-inner .form-label{
+    font-size: 13px;
+    color: rgba(0, 36, 72, 0.6);
+}.account-setting-menu-overlay-content-inner h5{
+    font-size: 14px;
+    margin: 2px;
+}.account-setting-menu-overlay-content-inner h3{
+     font-size: 15px;
+   
+}.account-setting-menu-overlay-content-inner .form-check-label{
+    font-size: 13px;
+}.account-setting-menu-overlay-content-inner  .form-select{
+    font-size: 13px;
+    font-weight: 500;
+}
+.account-setting-menu-overlay-content-inner p{
+     font-size: 13px;
+    color: rgba(0, 36, 72, 0.6);
+    margin-bottom: 5px;
+}.account-setting-menu-overlay-content-inner .form-control{
+font-weight: 500;
+    font-size: 15px;
+}.account-setting-single-btn-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}.account-setting-single-btn-wrapper .bi-trash3{
+    font-size: 20px;
+    color: red;
+}
+@media (max-width: 775.98px){
+.account-setting-menu-overlay-content{
+    width: 95%;
+}
+}
+@media (max-width: 400.98px){
+ 
+.account-setting-single-site p{
+    font-size: 11px;
+    margin-bottom:0px;
+    color: #4C6C8D;
+}.account-setting-single-site span{
+    font-size: 11px;
+    color: #4C6C8D;
+    font-weight: 500;
+}
+.my-account-setting-menu-content-wrapper{
+    padding: 20px 8px;
+}
+.account-setting-menu-overlay-content{
+    padding: 30px 10px;
+}
+}
+
+/* my account setting -menu popup */
+
+/* promotions */
+.opt-in-inner-wrapper{
+   padding: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: white;
+   color: black;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+}.promotions-innner{
+    overflow: unset;
+}.opt-in-inner-wrapper p{
+font-size: 13px;
+font-weight: 500;
+color: rgb(141, 141, 141);
+}.opt-in-inner-wrapper .bi-chevron-right{
+    color: var(--brand-green);
+    font-size: 30px;
+}@media (max-width: 1200.98px){
+.promotions-innner .order-return-content-inner-wrapper{
+    width: 100%;
+}
+}
+
+/* promotions */
+
+/* reports */
+.seller-dashboard-reports-wrapper,.seller-opportunities-wrapper{
+background-color: #E5E5E5;
+padding: 30px 0;
+}
+.seller-dashboard-reports-description{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}.seller-dashboard-reports-description h6{
+    font-size: 14px;
+}.seller-dashboard-reports-description p{
+    font-size: 13px;
+}.seller-dashboard-reports-content-wrapper{
+    height: 100%;
+}.seller-opportunities-content-wrapper{
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}.seller-opportunities-content-inner{
+display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.seller-opportunities-content-wrapper .seller-opportunities-image{
+    width: 60px;
+}.seller-opportunities-content-wrapper .seller-opportunities-image img{
+    width: 100%;
+}.seller-opportunities-content-wrapper .seller-opportunities-description{
+    margin-left: 5px;
+}.seller-opportunities-content-wrapper a{
+    color: #81C115;
+}
+/* reports */

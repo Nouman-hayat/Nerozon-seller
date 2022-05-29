@@ -580,6 +580,7 @@ margin: 0!important;
 .new-product-list-menu li a{
 color: black;
 text-decoration: none;
+
 }
 .new-product-list-menu  li{
     margin-bottom: 5px;
@@ -863,8 +864,9 @@ text-align: center;
     margin: 0 5px;
 }.new-product-list-menu .list-group-item  .bi-check-lg{
 color: var(--brand-green);
-margin-left: 30px;
-}.newlisting-select-brand-right .mark-img{
+margin-left: 10px;
+}
+.newlisting-select-brand-right .mark-img{
     width: 30px;
 }.newlisting-select-brand-right .mark-img img{
     width: 100%;
@@ -1799,7 +1801,160 @@ display: flex;
     width: 100%;
 }.seller-opportunities-content-wrapper .seller-opportunities-description{
     margin-left: 5px;
-}.seller-opportunities-content-wrapper a{
+}.seller-opportunities-content-wrapper .btn{
     color: #81C115;
 }
 /* reports */
+
+/* .performance-tab-style */
+
+.performance-tab-style{
+    border-top: 1px solid rgb(217, 217, 217);
+}.trending-tier-inner-wrapper{
+    padding: 20px;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}.trending-tier-image-wrapper{
+    display: flex;
+    justify-content: center;
+    
+    
+}.trending-tier-inner-wrapper h3{
+ border-bottom: 1px solid rgb(217, 217, 217);
+     padding-bottom: 20px;
+     font-size: 20px;
+     font-weight: 500;
+}
+.trending-tier-image-wrapper .trending-tier-image-inner{
+    width: 60px;
+    
+}.trending-tier-image-wrapper .trending-tier-image-inner img{
+    width: 100%;
+}.trending-tier-inner-wrapper h6{
+    font-size: 13px;
+    color:  rgb(173, 173, 173);
+    margin-bottom: 10px;
+}.trending-tier-inner-wrapper h5{
+    font-size: 15px;
+    margin: 20px 0;
+}.trending-tier-inner-wrapper .trending-tier-item-wrapper{
+    display: flex;
+    justify-content: space-between;
+}.trending-tier-inner-wrapper .trending-tier-item-wrapper .bi-x-lg{
+    color: red;
+}.trending-tier-inner-wrapper .trending-tier-item-wrapper p{
+    font-size: 13px;
+    font-weight: 600;
+      color:  rgb(173, 173, 173);
+    margin-bottom: 10px;
+}
+/* .performance-tab-style */
+
+/* earning-reports */
+.earning-reports-action-left-wrapper{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}.earning-reports-action-left-wrapper .form-select{
+    font-size: 12px;
+}.earning-reports-action-left-wrapper .btn{
+    color: var(--brand-orange);
+    border: 1px solid var(--brand-orange);
+    font-size: 12px;
+}.earning-report-list-wrapper .user-products-list-inner-wrapper table thead tr td ,.earning-report-list-wrapper .user-products-list-inner-wrapper table tbody tr td,
+#seller-advertising-wrapper .user-products-list-inner-wrapper table thead tr td ,#seller-advertising-wrapper .user-products-list-inner-wrapper table tbody tr td{
+    padding: 15px;
+}
+@media (max-width: 575.98px){
+  .earning-reports-action-left-wrapper{
+    flex-direction: column;
+    
+} .earning-reports-action-left-wrapper .form-select {
+    margin: 5px 0;
+} .earning-reports-action-left-wrapper .btn{
+    width: 100%;
+    margin: 10px 0;
+}
+}
+/* earning-reports- */
+/* product-ads */
+.select-product-ads-wrapper h3, #seller-advertising-wrapper h3{
+    color: #81C115;
+    font-size: 15px;
+}.seller-opportunities-innner-wrapper .selected-product-ads{
+  background: #F6FFE7;
+
+border: 1px solid #81C115;
+    
+}.seller-opportunities-innner-wrapper p{
+    font-size: 12px;
+}.select-product-ads-wrapper a{
+    width: 250px;
+}
+
+
+/* product-ads- */
+
+/* ads */
+#seller-advertising-wrapper{
+background-color: #E5E5E5;
+padding: 30px 0;    
+}#seller-advertising-wrapper .user-products-list-inner-wrapper p{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+}#seller-advertising-wrapper .user-products-list-inner-wrapper p span{
+    font-weight: 200;
+}#seller-advertising-wrapper .user-products-list-inner-wrapper .btn{
+    padding: 0;
+    margin: 0 10px;
+}#seller-advertising-wrapper .user-products-list-inner-wrapper .btn i{
+    font-size: 35px;
+}
+/* ads */
+
+/* select ad type */
+.select-product-ad-type-wrapper, .confirm-pay-ads-wrapper{
+background-color: white;
+padding: 20px;
+}.select-product-ad-type-inner .form-check-label{
+    font-size: 14px;
+}
+.select-product-ad-type-inner .form-input-groups{
+    display: flex;
+     justify-content: start;
+}.select-product-ad-type-inner .date-label{
+    margin-bottom: 5px;
+    font-size: 13px;
+}.select-product-ad-type-inner .form-check-input:checked{
+    background-color: #81C115;
+    border-color: #81C115;
+}.select-product-ad-type-inner p{
+    font-size: 13px;
+} .confirm-pay-ads-wrapper p{
+    margin-bottom: 2px;
+    font-size: 13px;
+    font-weight: 600; 
+}
+.confirm-pay-ads-wrapper span{
+  font-size: 13px;
+   
+}.confirm-pay-ads-wrapper .total-pay{
+    border-top: 1px solid rgb(231, 231, 231);
+    margin: 30px 0;
+    padding-top: 30px;
+}
+@media (max-width: 575.98px){
+.select-product-ad-type-inner .form-input-groups{
+   flex-direction: column;
+}.select-product-ad-type-inner .form-input-groups .ms-4 ,.select-product-ad-type-inner .form-input-groups .ms-2{
+    margin-left: 0!important;
+}
+}
+/* select ad type */

@@ -211,7 +211,7 @@ $(document).ready(function () {
 
   // selectproduct info popup
   $("#newlisting-selectproductinfo-image-wrapper").click(productimagepopup);
-   $("#selectproductinfo-image-close-popup").click(productimagepopup);
+  $("#selectproductinfo-image-close-popup").click(productimagepopup);
   function productimagepopup() {
     $(
       ".newlisting-selectproductinfo-overlay-inner,#selectproductinfo-product-image-wrappper"
@@ -219,111 +219,148 @@ $(document).ready(function () {
     $(window).scrollTop(0);
   }
 
-
-    $("#selling-info-popup").click(productsellingpopup);
-    $("#product-selling-close-popup").click(productsellingpopup);
-    function productsellingpopup() {
-      $(
-        ".newlisting-selectproductinfo-overlay-inner, #selectproductinfo-product-selling-info-wrappper"
-      ).toggle();
-      $(window).scrollTop(0);
-  }
-
-   $("#product-description-popup").click(productdescriptionpopup);
-   $("#product-description-close-popup").click(productdescriptionpopup);
-   function productdescriptionpopup() {
-     $(
-       ".newlisting-selectproductinfo-overlay-inner, #selectproductinfo-product-description-wrappper"
-     ).toggle();
-     $(window).scrollTop(0);
-   }
-
-$("#additional-info-popup").click(productadditionalpopup);
-$("#product-additional-close-popup").click(productadditionalpopup);
-function productadditionalpopup() {
-  $(
-    ".newlisting-selectproductinfo-overlay-inner, #selectproductinfo-product-additional-wrapper"
-  ).toggle();
-  $(window).scrollTop(0);
-}
-$("#account-info-popup").click(accountsettinginfopopup);
-$("#account-info-close-popup , .account-x-btn").click(accountsettinginfopopup);
-function accountsettinginfopopup() {
-  $(
-    ".account-setting-menu-overlay-inner, #account-info-popup-wrapper"
-  ).toggle();
-  $(window).scrollTop(0);
-}
-$("#contact-info-popup").click(contactsettinginfopopup);
-$("#contact-info-close-popup ,  .contact-x-btn").click(contactsettinginfopopup);
-function contactsettinginfopopup() {
-  $(
-    ".account-setting-menu-overlay-inner, #contact-info-popup-wrapper"
-  ).toggle();
-  $(window).scrollTop(0);
-}
- 
-
-$("#password-info-popup").click(passwordsettinginfopopup);
-$("#password-info-close-popup , .pass-x-btn").click(
-  passwordsettinginfopopup
-);
-function passwordsettinginfopopup() {
-  $(
-    ".account-setting-menu-overlay-inner, #password-info-popup-wrapper"
-  ).toggle();
-  $(window).scrollTop(0);
-}
-
-
-$("#business-info-popup").click(businesssettinginfopopup);
-$("#business-info-close-popup , .business-x-btn").click(
-  businesssettinginfopopup
-);
-function businesssettinginfopopup() {
-  $(
-    ".account-setting-menu-overlay-inner, #business-info-popup-wrapper"
-  ).toggle();
-  $(window).scrollTop(0);
-}
-
-  
-  $("#bank-info-popup").click(businesssettinginfopopup);
-  $("#bank-info-close-popup , .bank-x-btn").click(
-    businesssettinginfopopup
-  );
-  function businesssettinginfopopup() {
+  $("#selling-info-popup").click(productsellingpopup);
+  $("#product-selling-close-popup").click(productsellingpopup);
+  function productsellingpopup() {
     $(
-      ".account-setting-menu-overlay-inner, #bank-info-popup-wrapper"
+      ".newlisting-selectproductinfo-overlay-inner, #selectproductinfo-product-selling-info-wrappper"
     ).toggle();
     $(window).scrollTop(0);
   }
 
+  $("#product-description-popup").click(productdescriptionpopup);
+  $("#product-description-close-popup").click(productdescriptionpopup);
+  function productdescriptionpopup() {
+    $(
+      ".newlisting-selectproductinfo-overlay-inner, #selectproductinfo-product-description-wrappper"
+    ).toggle();
+    $(window).scrollTop(0);
+  }
 
-   $("#working-info-popup").click(workingsettinginfopopup);
-   $("#working-info-close-popup , .working-x-btn").click(
-     workingsettinginfopopup
-   );
-   function workingsettinginfopopup() {
-     $(
-       ".account-setting-menu-overlay-inner, #working-info-popup-wrapper"
-     ).toggle();
-     $(window).scrollTop(0);
-   }
-  
+  $("#additional-info-popup").click(productadditionalpopup);
+  $("#product-additional-close-popup").click(productadditionalpopup);
+  function productadditionalpopup() {
+    $(
+      ".newlisting-selectproductinfo-overlay-inner, #selectproductinfo-product-additional-wrapper"
+    ).toggle();
+    $(window).scrollTop(0);
+  }
+  $("#account-info-popup").click(accountsettinginfopopup);
+  $("#account-info-close-popup , .account-x-btn").click(
+    accountsettinginfopopup
+  );
+  function accountsettinginfopopup() {
+    $(
+      ".account-setting-menu-overlay-inner, #account-info-popup-wrapper"
+    ).toggle();
+    $(window).scrollTop(0);
+  }
+  $("#contact-info-popup").click(contactsettinginfopopup);
+  $("#contact-info-close-popup ,  .contact-x-btn").click(
+    contactsettinginfopopup
+  );
+  function contactsettinginfopopup() {
+    $(
+      ".account-setting-menu-overlay-inner, #contact-info-popup-wrapper"
+    ).toggle();
+    $(window).scrollTop(0);
+  }
 
-    $("#leave-info-popup").click(leavesettinginfopopup);
-    $("#leave-info-close-popup , .leave-x-btn").click(leavesettinginfopopup);
-    function leavesettinginfopopup() {
-      $(
-        ".account-setting-menu-overlay-inner, #leave-info-popup-wrapper"
-      ).toggle();
-      $(window).scrollTop(0);
-    }
-    // account setting popup
+  $("#password-info-popup").click(passwordsettinginfopopup);
+  $("#password-info-close-popup , .pass-x-btn").click(passwordsettinginfopopup);
+  function passwordsettinginfopopup() {
+    $(
+      ".account-setting-menu-overlay-inner, #password-info-popup-wrapper"
+    ).toggle();
+    $(window).scrollTop(0);
+  }
+
+  $("#business-info-popup").click(businesssettinginfopopup);
+  $("#business-info-close-popup , .business-x-btn").click(
+    businesssettinginfopopup
+  );
+  function businesssettinginfopopup() {
+    $(
+      ".account-setting-menu-overlay-inner, #business-info-popup-wrapper"
+    ).toggle();
+    $(window).scrollTop(0);
+  }
+
+  $("#bank-info-popup").click(businesssettinginfopopup);
+  $("#bank-info-close-popup , .bank-x-btn").click(businesssettinginfopopup);
+  function businesssettinginfopopup() {
+    $(".account-setting-menu-overlay-inner, #bank-info-popup-wrapper").toggle();
+    $(window).scrollTop(0);
+  }
+
+  $("#working-info-popup").click(workingsettinginfopopup);
+  $("#working-info-close-popup , .working-x-btn").click(
+    workingsettinginfopopup
+  );
+  function workingsettinginfopopup() {
+    $(
+      ".account-setting-menu-overlay-inner, #working-info-popup-wrapper"
+    ).toggle();
+    $(window).scrollTop(0);
+  }
+
+  $("#leave-info-popup").click(leavesettinginfopopup);
+  $("#leave-info-close-popup , .leave-x-btn").click(leavesettinginfopopup);
+  function leavesettinginfopopup() {
+    $(
+      ".account-setting-menu-overlay-inner, #leave-info-popup-wrapper"
+    ).toggle();
+    $(window).scrollTop(0);
+  }
+  // account setting popup
+
+  // image upload
+  $("nav .button").click(function () {
+    $("nav .button span").toggleClass("rotate");
+  });
+  $("nav ul li .first").click(function () {
+    $("nav ul li .first span").toggleClass("rotate");
+  });
+  $("nav ul li .second").click(function () {
+    $("nav ul li .second span").toggleClass("rotate");
+  });
+
+  // image upload
+
+  // upload images display
+  $(".carousel-image-display").owlCarousel({
+    items: 1,
+    loop: true,
+    margin: 30,
+    dots: false,
+    nav:true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 1,
+      },
+    },
+  });
+  // upload images display
+
+
+  // delete upload image/
+  $(".delete-upload-image").click(function () {
+    $(this).parent().remove();
+    console.log($(this).parent());
+  });
+  // delete -upload - image;
 });
 
 
 
 
-// user dashboard
+

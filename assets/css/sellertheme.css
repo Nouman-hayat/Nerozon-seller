@@ -1451,28 +1451,7 @@ width: 100%;
 } .order-returns-wrapper .user-products-list-inner-wrapper{
     overflow-x: unset;
 }
-.order-return-inner-wrapper{
-    overflow-x: scroll;
-  
-}
-.order-return-inner-wrapper::-webkit-scrollbar {
-  width: 2px;
- 
-}
- 
-.order-return-inner-wrapper::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 2px rgba(175, 175, 175, 0.3);
- 
-}
 
-.order-return-inner-wrapper::-webkit-scrollbar-thumb {
-  background-color: rgb(165, 165, 165);
-  outline: 1px solid rgb(172, 172, 172);
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-}
 .user-bottom-right .policy-bar-link{
     color: var(--brand-green);
     display: inline-block;
@@ -1482,7 +1461,7 @@ width: 100%;
    margin-bottom: 15px;
     background-color: white;
 }.return-filter-product.margin-sect{
- margin-top: 32px;
+ margin-top: 15px;
 }
 .return-filter-product h5{
     font-size: 14px;
@@ -1518,6 +1497,28 @@ width: 100%;
 }@media (max-width: 1200.98px){
 .order-return-content-inner-wrapper{
     width: 1200px;
+}
+.order-return-inner-wrapper{
+    overflow-x: scroll;
+  
+}
+.order-return-inner-wrapper::-webkit-scrollbar {
+  width: 2px;
+ 
+}
+ 
+.order-return-inner-wrapper::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px rgba(175, 175, 175, 0.3);
+ 
+}
+
+.order-return-inner-wrapper::-webkit-scrollbar-thumb {
+  background-color: rgb(165, 165, 165);
+  outline: 1px solid rgb(172, 172, 172);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 }
 /* return policy */
@@ -2223,9 +2224,10 @@ color: black;
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
 }
- input{
+ .seller-image-upload-wrapper .seller-image-upload-category  input{
   display: none;
-}.image-input-label-wrapper {
+}
+.image-input-label-wrapper {
     display: flex;
     align-items: center;
     width: 90%;
@@ -2427,3 +2429,14 @@ width: 100%;
 }
 }
 /* select-product-display-data-content */
+/* selectadvertisingproduct */
+.product-ads-footer-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}@media (max-width: 575.98px){
+   .product-ads-footer-wrapper{
+       flex-direction: column;
+   } 
+}
+/* selectadvertisingproduct */

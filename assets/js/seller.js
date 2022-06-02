@@ -170,6 +170,23 @@ $(document).ready(function () {
   }
   //order- list-managment checbox
 
+//block-list-managment checbox
+  blocklistprod();
+  function orderselectprod() {
+    $("#blocklist-select-all-product").click(blocklistallproduct);
+  }
+  function blocklistallproduct() {
+    $(".blocklist-select-product").attr("checked", "checked");
+    $("#blocklist-select-all-product").click(function () {
+      $(".blocklist-select-product").removeAttr("checked");
+      blocklistprod();
+    });
+  }
+  
+  //block- list-managment checbox
+
+
+
   // order-rta-list-managment checbox
   rtaselectprod();
   function rtaselectprod() {

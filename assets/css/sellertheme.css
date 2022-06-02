@@ -2440,3 +2440,94 @@ width: 100%;
    } 
 }
 /* selectadvertisingproduct */
+
+/* blocked listing */
+.info-stat-icon-wrapper{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}.blocklist-top-actions-wrapper .form-select{
+    font-size: 12px;
+    
+}
+.blocklist-select-icon .form-select{
+    background-image: url('../images/select-icon.png');
+    background-size: 10px;
+}.border-text-orange .form-select{
+    border-color: var(--brand-orange);
+    color: var(--brand-orange);
+    background-image: url('../images/select-icon-orange.png');
+    background-size: 10px;
+}
+.blocklist-filter-product-inner .form-floating{
+    width: 130px;
+}.blocklist-filter-product-inner .reason-blocklist{
+width: 200px;
+}.blocklist-filter-product-inner .select-Procurement{
+    width: 170px;
+}
+.blocklist-filter-product-inner .form-select{
+    font-size: 12px;
+}
+ .blocklist-filter-product-wrapper .blocklist-filter-product-inner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.blocklist-filter-product-wrapper .form-floating>.form-select {
+    height: unset; 
+     line-height: unset;
+    
+}
+.blocklist-filter-product-wrapper .form-floating>.form-select {
+    padding-top: 10px; 
+    
+}  .blocklist-filter-product-wrapper .blocklist-filter-product-inner .btn{
+    padding: 10px 30px;
+    color: white;
+    background-color: var(--brand-orange);
+    padding-bottom: 0.625rem;
+    padding-top: 10px ;
+    font-size: 12px;
+} .blocklist-filter-product-wrapper{
+       background-color: #F2F2F2;
+      
+}.blocklist-product-table .user-products-list-inner-wrapper table tbody tr td a{
+    font-size: 14px;
+    color: blue;
+    text-decoration: none;
+}.blocklist-product-table .blocklist-action-required{
+    background-color: #F6FFE7;
+  padding: 20px 10px;
+}
+/* blocked listing */
+/* activating-list */
+.activating-list-inner-wrapper .btn{
+    padding: 10px 30px;
+    border-color:#81C115;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-size: 12px;
+}.ready-for-activation-table  .user-products-list-inner-wrapper table tbody tr td a{
+    font-size: 14px;
+    color: blue;
+    text-decoration: none;
+}.ready-for-activation-table  .user-products-list-inner-wrapper .form-select{
+    font-size: 12px;
+    width: 130px;
+}
+.ready-for-activation-table .user-products-list-inner-wrapper table thead tr td{
+    font-size: 12px;
+    padding: 20px 10px;
+}
+@media (max-width: 1300.98px){
+.ready-for-activation-table .user-products-list-inner-wrapper table {
+    width: 1300px;
+}.activating-list-inner-wrapper .btn{
+    margin: 8px;
+}
+}
+/* activating-list */

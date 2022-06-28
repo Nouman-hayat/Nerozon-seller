@@ -171,7 +171,7 @@ $(document).ready(function () {
   //order- list-managment checbox
 
 //block-list-managment checbox
-  blocklistprod();
+  orderselectprod();
   function orderselectprod() {
     $("#blocklist-select-all-product").click(blocklistallproduct);
   }
@@ -375,6 +375,16 @@ $(document).ready(function () {
     console.log($(this).parent());
   });
   // delete -upload - image;
+
+  $(".unselected-image").click(function () {
+    
+ var path=  $(this).attr("src");
+    console.log(path)
+    $(".selected-image").removeAttr("src");
+    $(".selected-image").attr("src", path);
+    
+  });
+
 });
 
 
